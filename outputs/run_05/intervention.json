@@ -1,0 +1,30 @@
+{
+  "segment_issue_detected": true,
+  "trigger": {
+    "segment": "Mid-Market",
+    "account_ids": [
+      "A001",
+      "A010",
+      "A014"
+    ]
+  },
+  "plan": {
+    "segment_label": "Mid-Market accounts with declining reporting/mobile adoption and renewals within 90 days",
+    "affected_accounts": [
+      "A001",
+      "A010",
+      "A014"
+    ],
+    "root_cause_hypothesis": "All three accounts show a consistent 3-week decline in active users (A001: 106\u219282, A010: 104\u219287, A014: 99\u219287) and power-users, with declining health scores and low NPS (3-6). The open tickets reveal a shared underlying theme: data trust and adoption friction in reporting/data surfaces. A001 (T010) reports dashboard exports missing recent data, A010 (T004) has a power user questioning a usage dashboard drop, and A014 (T003) has mobile onboarding blocking new users. The pattern suggests a data freshness/integrity issue in the reporting pipeline (affecting A001 and A010 directly) compounded by a mobile onboarding defect on A014. Declining power-user counts indicate the most engaged users are disengaging first\u2014a classic precursor to churn\u2014making this a renewal-blocking technical credibility problem, not a generic adoption gap.",
+    "intervention_plan": {
+      "action": "Launch a 'Reporting & Mobile Trust Recovery' play: (1) Engineering hotfix on dashboard export data freshness and mobile onboarding bug, validated per account; (2) CSM-led executive call to each account walking through the fix, root cause, and a tailored adoption recovery plan focused on rebuilding power-user engagement in reporting; (3) Follow-up enablement session for end-users on the reporting module.",
+      "delivery_method": "CSM-led call",
+      "target_owner": "CSM",
+      "rollout_timing": "next 2 weeks"
+    },
+    "success_metric": "Restore weekly active users to \u2265100 and power-users to \u226535 per account within the measurement window, close all three open tickets (T010, T004, T003), and secure renewal commitment from A014 before 2026-05-20",
+    "measurement_window_days": 30,
+    "fallback_if_intervention_fails": "Escalate to VP of Customer Success and Head of Product; offer A014 a 60-day renewal extension with a written remediation SLA; engage executive sponsor outreach for A001 and A010 and prepare retention discount proposals (5-10%) tied to multi-year commitment",
+    "estimated_effort_hours": 40
+  }
+}

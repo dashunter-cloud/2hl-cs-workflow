@@ -1,0 +1,117 @@
+[
+  {
+    "ticket_id": "T001",
+    "account_id": "A008",
+    "route": "escalation",
+    "urgency_score": 9,
+    "reason": "High-severity unresolved blocker (SSO failures blocking implementation) on $240K enterprise account with renewal in 43 days, executive involvement, and declining health/usage trending toward churn.",
+    "suggested_owner": "Exec",
+    "draft_response": null,
+    "follow_up_in_days": null
+  },
+  {
+    "ticket_id": "T002",
+    "account_id": "A002",
+    "route": "escalation",
+    "urgency_score": 9,
+    "reason": "High severity blocker with three failures in one week, enterprise customer at renewal in 62 days, health score declining, and unresolved integration pattern.",
+    "suggested_owner": "TAM",
+    "draft_response": null,
+    "follow_up_in_days": null
+  },
+  {
+    "ticket_id": "T003",
+    "account_id": "A014",
+    "route": "escalation",
+    "urgency_score": 9,
+    "reason": "High-severity blocker (mobile onboarding broken) on account with renewal in 22 days, declining health score, and explicit renewal risk noted by support.",
+    "suggested_owner": "Exec",
+    "draft_response": null,
+    "follow_up_in_days": null
+  },
+  {
+    "ticket_id": "T004",
+    "account_id": "A010",
+    "route": "escalation",
+    "urgency_score": 8,
+    "reason": "Declining usage trend across two departments combined with declining health score and imminent renewal (65 days) signals churn risk requiring immediate intervention.",
+    "suggested_owner": "TAM",
+    "draft_response": null,
+    "follow_up_in_days": null
+  },
+  {
+    "ticket_id": "T005",
+    "account_id": "A012",
+    "route": "scheduled",
+    "urgency_score": 4,
+    "reason": "Low-severity enablement gap with documented follow-up action from recent call; coordinates with Riley Patel's existing permissions guide commitment.",
+    "suggested_owner": "CSM",
+    "draft_response": "Thanks for reaching out on advanced permissions\u2014we're glad you're diving deeper. Riley Patel mentioned during your last call that we'd be sending a permissions guide to clarify the admin workflows that were causing confusion. We'll bundle your specific how-to questions into that guide and follow up within 3 business days with a tailored walkthrough.",
+    "follow_up_in_days": 3
+  },
+  {
+    "ticket_id": "T006",
+    "account_id": "A017",
+    "route": "escalation",
+    "urgency_score": 9,
+    "reason": "High severity churn risk with renewal in 85 days, declining usage, no champion, and explicit platform abandonment requiring executive intervention.",
+    "suggested_owner": "Exec",
+    "draft_response": null,
+    "follow_up_in_days": null
+  },
+  {
+    "ticket_id": "T007",
+    "account_id": "A005",
+    "route": "escalation",
+    "urgency_score": 9,
+    "reason": "High-severity renewal at 32 days with declining usage trend and executive sponsor requesting immediate deliverable; requires immediate intervention to prevent churn risk.",
+    "suggested_owner": "Exec",
+    "draft_response": null,
+    "follow_up_in_days": null
+  },
+  {
+    "_parse_error": true,
+    "raw": "```json\n{\n  \"ticket_id\": \"T008\",\n  \"account_id\": \"A004\",\n  \"route\": \"escalation\",\n  \"urgency_score\": 8,\n  \"reason\": \"Health score dropped 26% post-champion departure with accelerating usage decline; renewal in 116 days at risk without immediate intervention to stabilize new admin and re-engage team.\",\n  \"suggested_owner\": \"CSM\",\n  \"draft_response\": null,\n  \"follow_up_in_days\": null\n}\n```\n\n**Escalation Justification:**\n- **Renewal risk:** 116 days to 2026-08-20 renewal falls within critical 60-day re-engagement window\n- **Ownership transition blocker:** Champion departure + new admin onboarding is a known churn vector; low login frequency and declining power-user count indicate disengagement spiral\n- **Health trajectory:** 54 health score with sharp 26-point decline + 40% user drop in 2 weeks signals unresolved adoption blocker\n- **CSM action required:** Riley Patel needs to conduct immediate transition onboarding call with new admin, document use cases the former champion owned, and establish a 30-day stabilization check-in before passive decay continues\n\nThis requires CSM-led intervention strategy, not support ticket closure.",
+    "ticket_id": "T008"
+  },
+  {
+    "ticket_id": "T009",
+    "account_id": "A015",
+    "route": "escalation",
+    "urgency_score": 8,
+    "reason": "Strategic enterprise account ($300k) with renewal in 6 months has a roadmap blocker affecting their next rollout; requires product leadership alignment.",
+    "suggested_owner": "TAM",
+    "draft_response": null,
+    "follow_up_in_days": null
+  },
+  {
+    "ticket_id": "T010",
+    "account_id": "A001",
+    "route": "escalation",
+    "urgency_score": 9,
+    "reason": "At-risk renewal (75 days out) with accelerating adoption decline driven by unresolved reporting blocker directly tied to customer frustration.",
+    "suggested_owner": "TAM",
+    "draft_response": null,
+    "follow_up_in_days": null
+  },
+  {
+    "ticket_id": "T011",
+    "account_id": "A006",
+    "route": "scheduled",
+    "urgency_score": 3,
+    "reason": "Expansion opportunity with high adoption growth; requires coordination with CSM follow-up already promised on 2026-04-22.",
+    "suggested_owner": "CSM",
+    "draft_response": "Thanks for your interest in our premium automation features! Based on your growing power-user base (54 users as of today), I'd like to schedule a brief call with Riley, your CSM, to walk through the feature limits, use-case fit, and pricing options for your team. Riley will follow up within 2 business days with some tailored scenarios.",
+    "follow_up_in_days": 2
+  },
+  {
+    "ticket_id": "T012",
+    "account_id": "A003",
+    "route": "scheduled",
+    "urgency_score": 6,
+    "reason": "High-value expansion opportunity with strong engagement signals; needs CSM coordination to align rollout planning with existing renewal timeline.",
+    "suggested_owner": "CSM",
+    "draft_response": "Thanks for reaching out about expanding to your analytics team\u2014we're excited to support this growth! Morgan will connect with you within 2 business days to walk through our best-practice setup for analytics workflows and share a phased rollout plan tailored to your team's needs.",
+    "follow_up_in_days": 2
+  }
+]

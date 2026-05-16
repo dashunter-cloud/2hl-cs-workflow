@@ -1,0 +1,101 @@
+{
+  "run_id": "04",
+  "stage_counts": {
+    "accounts_reviewed": 18,
+    "tickets_triaged": 12,
+    "checkins_prepared": 12,
+    "outputs_reviewed": 8
+  },
+  "telemetry_summary": {
+    "by_stage": {
+      "account_review": {
+        "calls": 18,
+        "in_tokens": 9554,
+        "out_tokens": 2324,
+        "total_cost_usd": 0.0028274999999999997,
+        "tier": "low",
+        "model": "claude-haiku-4-5-20251001",
+        "avg_cost_per_call_usd": 0.00015708333333333332,
+        "avg_in_tokens": 530.7777777777778,
+        "avg_out_tokens": 129.11111111111111
+      },
+      "prioritization": {
+        "calls": 1,
+        "in_tokens": 2511,
+        "out_tokens": 800,
+        "total_cost_usd": 0.0045688000000000005,
+        "tier": "mid",
+        "model": "claude-sonnet-4-6",
+        "avg_cost_per_call_usd": 0.0045688000000000005,
+        "avg_in_tokens": 2511.0,
+        "avg_out_tokens": 800.0
+      },
+      "inbound_triage": {
+        "calls": 12,
+        "in_tokens": 6917,
+        "out_tokens": 1846,
+        "total_cost_usd": 0.00214515,
+        "tier": "low",
+        "model": "claude-haiku-4-5-20251001",
+        "avg_cost_per_call_usd": 0.00017876250000000002,
+        "avg_in_tokens": 576.4166666666666,
+        "avg_out_tokens": 153.83333333333334
+      },
+      "checkin_prep": {
+        "calls": 12,
+        "in_tokens": 7502,
+        "out_tokens": 9336,
+        "total_cost_usd": 0.0358768,
+        "tier": "mid",
+        "model": "claude-sonnet-4-6",
+        "avg_cost_per_call_usd": 0.0029897333333333332,
+        "avg_in_tokens": 625.1666666666666,
+        "avg_out_tokens": 778.0
+      },
+      "quality_review": {
+        "calls": 8,
+        "in_tokens": 5229,
+        "out_tokens": 6299,
+        "total_cost_usd": 0.02434,
+        "tier": "mid",
+        "model": "claude-sonnet-4-6",
+        "avg_cost_per_call_usd": 0.0030425,
+        "avg_in_tokens": 653.625,
+        "avg_out_tokens": 787.375
+      },
+      "quality_judge": {
+        "calls": 8,
+        "in_tokens": 12012,
+        "out_tokens": 642,
+        "total_cost_usd": 0.0021869999999999997,
+        "tier": "low",
+        "model": "claude-haiku-4-5-20251001",
+        "avg_cost_per_call_usd": 0.00027337499999999996,
+        "avg_in_tokens": 1501.5,
+        "avg_out_tokens": 80.25
+      },
+      "intervention_design": {
+        "calls": 1,
+        "in_tokens": 1487,
+        "out_tokens": 785,
+        "total_cost_usd": 0.013881,
+        "tier": "high",
+        "model": "claude-opus-4-7",
+        "avg_cost_per_call_usd": 0.013881,
+        "avg_in_tokens": 1487.0,
+        "avg_out_tokens": 785.0
+      }
+    },
+    "total_cost_usd": 0.08582625,
+    "total_calls": 60
+  },
+  "failure_signals": {
+    "parse_errors_by_stage": {
+      "inbound_triage": 1,
+      "checkin_prep": 1
+    },
+    "ticket_escalations": 8,
+    "quality_review_escalations": 2,
+    "intervention_triggered": true
+  }
+}

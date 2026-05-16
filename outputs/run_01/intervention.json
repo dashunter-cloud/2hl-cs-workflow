@@ -1,0 +1,30 @@
+{
+  "segment_issue_detected": true,
+  "trigger": {
+    "segment": "Mid-Market",
+    "account_ids": [
+      "A001",
+      "A010",
+      "A014"
+    ]
+  },
+  "plan": {
+    "segment_label": "Mid-Market accounts with declining reporting/adoption usage and renewals within 90 days",
+    "affected_accounts": [
+      "A001",
+      "A010",
+      "A014"
+    ],
+    "root_cause_hypothesis": "All three accounts show a consistent 3-week decline in active and power-users (A001: 106\u219282, A010: 104\u219287, A014: 99\u219287) concentrated in the reporting/dashboard and mobile surfaces. Open tickets corroborate a data-freshness or data-trust issue: A001-T010 reports dashboard exports missing recent data, A010-T004 has a power user questioning a usage dashboard drop, and A014-T003 reports a mobile onboarding blocker. Combined with falling NPS (6, 5, 3) and declining health scores, the evidence points to product reliability gaps in reporting exports and mobile onboarding eroding power-user confidence \u2014 not a generic engagement problem. With renewals 22\u201380 days out, this is a trust-recovery situation, not an awareness one.",
+    "intervention_plan": {
+      "action": "Launch a 'Reporting & Mobile Reliability Recovery' play: (1) Product/Eng triage and hotfix the dashboard export data-lag (T010) and mobile onboarding bug (T003) within 5 business days; (2) CSM-led executive call with each account walking through the root cause, the fix timeline, and a tailored re-adoption plan focused on the reporting module and mobile onboarding; (3) deliver a 1:1 power-user enablement session to rebuild reporting trust and re-engage the 10\u201313 power-users each account has lost.",
+      "delivery_method": "CSM-led call",
+      "target_owner": "CSM",
+      "rollout_timing": "this week"
+    },
+    "success_metric": "Restore weekly active users to \u2265100 and power-users to \u226535 per account (baseline from 2026-04-10) and close all three flagged tickets (T010, T004, T003) with confirmed customer sign-off, while lifting health score by \u226510 points per account",
+    "measurement_window_days": 30,
+    "fallback_if_intervention_fails": "Escalate A014 (renewal 2026-05-20) to VP Customer Success and Account Executive for a renewal-protection plan including a short-term contract extension or credit; for A001 and A010, trigger executive sponsor outreach and a Product GM review to negotiate a remediation commitment ahead of their July renewals.",
+    "estimated_effort_hours": 32
+  }
+}

@@ -1,0 +1,164 @@
+[
+  {
+    "account_id": "A001",
+    "health_delta": "declining",
+    "primary_risk": "Reporting module adoption collapse with unresolved data export issue and declining user engagement",
+    "primary_opportunity": null,
+    "attention_needed": true,
+    "attention_reason": "Health declining 9 points with 15-month renewal window, active adoption drop (106\u219282 users in 2 weeks), unresolved medium-severity ticket blocking reporting workflows, and NPS at 6 signals imminent churn risk.",
+    "confidence": "high"
+  },
+  {
+    "account_id": "A002",
+    "health_delta": "declining",
+    "primary_risk": "Unresolved high-severity integration sync failures impacting data reliability",
+    "primary_opportunity": null,
+    "attention_needed": true,
+    "attention_reason": "Unresolved high-severity ticket with repeated sync failures and concerned customer sentiment; health score dropped 8 points; follow-up escalation from 2026-04-18 call not yet closed.",
+    "confidence": "high"
+  },
+  {
+    "account_id": "A003",
+    "health_delta": "improving",
+    "primary_risk": "Expansion rollout requires best-practice configuration support to prevent adoption friction",
+    "primary_opportunity": "High-confidence expansion signal from analytics team with growing usage and positive sentiment",
+    "attention_needed": true,
+    "attention_reason": "High-confidence expansion opportunity with pending follow-up on rollout plan; last contact 2026-04-25 requires timely delivery of configuration guidance to drive adoption.",
+    "confidence": "high"
+  },
+  {
+    "account_id": "A004",
+    "health_delta": "declining",
+    "primary_risk": "Champion departure with knowledge gap; declining adoption and engagement",
+    "primary_opportunity": null,
+    "attention_needed": true,
+    "attention_reason": "Health declined from 73 to 54 with sustained usage drop (25\u219215 active users), champion departed, and onboarding gap unresolved since 2026-04-26; renewal in 16 months at risk.",
+    "confidence": "high"
+  },
+  {
+    "account_id": "A005",
+    "health_delta": "declining",
+    "primary_risk": "Renewal in 34 days with declining active users (299\u2192255) and unresolved high-severity ticket requiring urgent exec deliverable",
+    "primary_opportunity": "Exec sponsor engagement presents chance to reframe usage narrative and secure early renewal commitment",
+    "attention_needed": true,
+    "attention_reason": "High-severity unresolved ticket due Friday combined with renewal in <45 days and declining health score (76\u219267) and usage trends require immediate CSM action.",
+    "confidence": "high"
+  },
+  {
+    "account_id": "A006",
+    "health_delta": "improving",
+    "primary_risk": "Budget approval needed for premium expansion",
+    "primary_opportunity": "High-confidence expansion into premium automation features",
+    "attention_needed": true,
+    "attention_reason": "Strong expansion signal with high adoption growth; follow-up on premium automation options promised on 2026-04-22 is overdue.",
+    "confidence": "high"
+  },
+  {
+    "account_id": "A007",
+    "health_delta": "flat",
+    "primary_risk": null,
+    "primary_opportunity": "Growing power-user adoption (10 power-users in latest period) suggests readiness for expansion",
+    "attention_needed": true,
+    "attention_reason": "Medium expansion signal with no recent contact (last touched 2026-04-11); proactive outreach recommended to capture upsell opportunity.",
+    "confidence": "medium"
+  },
+  {
+    "account_id": "A008",
+    "health_delta": "declining",
+    "primary_risk": "SSO implementation blocker delaying rollout; declining usage and health score with high-severity unresolved ticket",
+    "primary_opportunity": null,
+    "attention_needed": true,
+    "attention_reason": "High-severity unresolved ticket blocking implementation, declining health (66\u219248), usage (301\u2192245 active users), and NPS=2 with renewal 16 months out; immediate technical escalation required.",
+    "confidence": "high"
+  },
+  {
+    "account_id": "A009",
+    "health_delta": "flat",
+    "primary_risk": null,
+    "primary_opportunity": null,
+    "attention_needed": false,
+    "attention_reason": null,
+    "confidence": "high"
+  },
+  {
+    "account_id": "A010",
+    "health_delta": "declining",
+    "primary_risk": "Usage declining across departments (87\u219294\u2192104 active users over 2 weeks); trust issue with reporting data freshness",
+    "primary_opportunity": "Medium expansion signal present; address data quality to re-engage power users",
+    "attention_needed": true,
+    "attention_reason": "Declining health (63\u219258) with increasing support tickets and accelerating usage drop, plus unresolved trust issue blocking expansion; renewal in 16 months at risk if trend continues.",
+    "confidence": "high"
+  },
+  {
+    "account_id": "A011",
+    "health_delta": "improving",
+    "primary_risk": null,
+    "primary_opportunity": "Advanced workflows expansion\u2014legal ops team engaged, strong usage growth trajectory",
+    "attention_needed": true,
+    "attention_reason": "High-confidence expansion signal with no contact in 12 days despite active inquiry about advanced features; risk of competitor engagement or self-service adoption without upsell capture.",
+    "confidence": "high"
+  },
+  {
+    "account_id": "A012",
+    "health_delta": "flat",
+    "primary_risk": "Permission model clarity issues creating support friction despite stable usage",
+    "primary_opportunity": "Enablement-driven expansion: proactive permissions training could unlock power-user growth",
+    "attention_needed": true,
+    "attention_reason": "8 tickets in 30d with low NPS (4) indicates support burden; medium expansion signal with no recent contact since 2026-04-23 requires engagement to capitalize on opportunity.",
+    "confidence": "medium"
+  },
+  {
+    "account_id": "A013",
+    "health_delta": "improving",
+    "primary_risk": null,
+    "primary_opportunity": "Expansion opportunity with high-satisfaction customer showing strong usage growth and advocacy potential",
+    "attention_needed": true,
+    "attention_reason": "Medium expansion signal with growing power-user base and NPS 10 warrants proactive outreach; last contact 2 weeks ago.",
+    "confidence": "high"
+  },
+  {
+    "account_id": "A014",
+    "health_delta": "declining",
+    "primary_risk": "Mobile app adoption friction blocking onboarding; renewal in 27 days with declining health score and power-user engagement",
+    "primary_opportunity": null,
+    "attention_needed": true,
+    "attention_reason": "Renewal in 27 days with health declining from 71\u219252, unresolved medium-severity ticket blocking core workflow, and no documented follow-up since 2026-04-16 mobile onboarding plan commitment.",
+    "confidence": "high"
+  },
+  {
+    "account_id": "A015",
+    "health_delta": "flat",
+    "primary_risk": "Roadmap dependency for next rollout; strategic integrations alignment unclear",
+    "primary_opportunity": "High expansion signal; growth in active users and power-user adoption",
+    "attention_needed": true,
+    "attention_reason": "High expansion signal with no recent contact since 2026-04-25 and unresolved roadmap dependency blocking customer's next phase.",
+    "confidence": "high"
+  },
+  {
+    "account_id": "A016",
+    "health_delta": "flat",
+    "primary_risk": "Active user decline and rising support volume suggest potential engagement erosion",
+    "primary_opportunity": "Medium expansion signal with neutral NPS presents upsell potential if engagement issues resolved",
+    "attention_needed": false,
+    "attention_reason": null,
+    "confidence": "medium"
+  },
+  {
+    "account_id": "A017",
+    "health_delta": "declining",
+    "primary_risk": "Usage collapse with unresolved high-severity ticket; no identified champion",
+    "primary_opportunity": null,
+    "attention_needed": true,
+    "attention_reason": "High-severity open ticket on platform abandonment, health score dropped 18 points, active users declined 34% in 2 weeks, and no stakeholder owner identified despite reactivation attempt.",
+    "confidence": "high"
+  },
+  {
+    "account_id": "A018",
+    "health_delta": "improving",
+    "primary_risk": "Expansion requires governance plan before multi-team rollout",
+    "primary_opportunity": "High-confidence expansion signal with strong usage growth and NPS 9",
+    "attention_needed": true,
+    "attention_reason": "Expansion opportunity at high confidence with open follow-up (phased rollout approach) requiring prompt execution to capitalize on momentum.",
+    "confidence": "high"
+  }
+]

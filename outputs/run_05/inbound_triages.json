@@ -1,0 +1,117 @@
+[
+  {
+    "ticket_id": "T001",
+    "account_id": "A008",
+    "route": "escalation",
+    "urgency_score": 9,
+    "reason": "High-severity unresolved blocker (SSO failures) blocking implementation at $240k enterprise account with renewal in 43 days, executive escalation already required, and rapid user decline indicating churn risk.",
+    "suggested_owner": "Exec",
+    "draft_response": null,
+    "follow_up_in_days": null
+  },
+  {
+    "ticket_id": "T002",
+    "account_id": "A002",
+    "route": "escalation",
+    "urgency_score": 9,
+    "reason": "High-severity blocker with repeated failures, enterprise renewal in 62 days, declining health score, and unresolved pattern indicates product/engineering involvement needed.",
+    "suggested_owner": "TAM",
+    "draft_response": null,
+    "follow_up_in_days": null
+  },
+  {
+    "ticket_id": "T003",
+    "account_id": "A014",
+    "route": "escalation",
+    "urgency_score": 9,
+    "reason": "Critical blocker on mobile onboarding directly impacts renewal (2026-05-20) for declining account with negative sentiment and health score drop.",
+    "suggested_owner": "Exec",
+    "draft_response": null,
+    "follow_up_in_days": null
+  },
+  {
+    "ticket_id": "T004",
+    "account_id": "A010",
+    "route": "escalation",
+    "urgency_score": 8,
+    "reason": "Declining health score, renewal within 70 days, and unresolved data trust issue blocking adoption require immediate executive attention to prevent churn.",
+    "suggested_owner": "Exec",
+    "draft_response": null,
+    "follow_up_in_days": null
+  },
+  {
+    "ticket_id": "T005",
+    "account_id": "A012",
+    "route": "scheduled",
+    "urgency_score": 4,
+    "reason": "Low-severity enablement issue with a known resolution path (permissions guide already flagged in recent call notes); schedule during CSM's next planned check-in to reinforce adoption.",
+    "suggested_owner": "CSM",
+    "draft_response": "Thanks for reaching out on advanced permissions\u2014we're glad you're digging deeper. Riley Patel, your CSM, noted this exact gap during our last call and has prepared a tailored permissions guide for your team. We'll get that to you within the next few days as part of a brief follow-up to ensure your admins feel confident managing role-based access.",
+    "follow_up_in_days": 7
+  },
+  {
+    "ticket_id": "T006",
+    "account_id": "A017",
+    "route": "escalation",
+    "urgency_score": 9,
+    "reason": "High severity churn risk with renewal 85 days out, declining usage trend, no champion, and explicit platform abandonment requiring immediate executive intervention.",
+    "suggested_owner": "Exec",
+    "draft_response": null,
+    "follow_up_in_days": null
+  },
+  {
+    "ticket_id": "T007",
+    "account_id": "A005",
+    "route": "escalation",
+    "urgency_score": 9,
+    "reason": "High-severity renewal at risk (45 days out, declining usage, declining health score, executive sponsor demanding deliverable by Friday) requires immediate exec/TAM intervention.",
+    "suggested_owner": "Exec",
+    "draft_response": null,
+    "follow_up_in_days": null
+  },
+  {
+    "_parse_error": true,
+    "raw": "```json\n{\n  \"ticket_id\": \"T008\",\n  \"account_id\": \"A004\",\n  \"route\": \"escalation\",\n  \"urgency_score\": 8,\n  \"reason\": \"Ownership transition risk + declining health (54\u219273) + renewal within 120 days + power-user attrition signal unresolved blocker to adoption.\",\n  \"suggested_owner\": \"CSM\",\n  \"draft_response\": null,\n  \"follow_up_in_days\": null\n}\n```\n\n**Escalation justification:** DeltaEd is a churn-risk account\u2014champion departure coincides with sharp usage decline (25\u219215 active users, 10\u21924 power-users in 14 days), plummeting health score, and renewal in 115 days. This requires immediate CSM intervention (Riley Patel) with structured onboarding + stakeholder discovery, not routine support handling. New admin onboarding is the lever to re-engage before renewal conversations begin.",
+    "ticket_id": "T008"
+  },
+  {
+    "ticket_id": "T009",
+    "account_id": "A015",
+    "route": "escalation",
+    "urgency_score": 8,
+    "reason": "Strategic enterprise account ($300k) with renewal in 6 months has roadmap-blocking dependency requiring product visibility and commitment.",
+    "suggested_owner": "TAM",
+    "draft_response": null,
+    "follow_up_in_days": null
+  },
+  {
+    "ticket_id": "T010",
+    "account_id": "A001",
+    "route": "escalation",
+    "urgency_score": 8,
+    "reason": "High-severity adoption blocker (reporting module) in at-risk renewal account within 85 days of renewal date with documented 3-week usage decline.",
+    "suggested_owner": "TAM",
+    "draft_response": null,
+    "follow_up_in_days": null
+  },
+  {
+    "ticket_id": "T011",
+    "account_id": "A006",
+    "route": "scheduled",
+    "urgency_score": 3,
+    "reason": "Low-severity expansion inquiry from high-health account with clear upsell opportunity; coordinate with Riley's planned premium automation follow-up from 2026-04-22 call.",
+    "suggested_owner": "CSM",
+    "draft_response": "Great question! We're excited about your growing automation needs\u2014your team's adoption has been impressive. Riley is preparing a detailed breakdown of premium automation feature limits and options tailored to your use case, and will share that with you by end of week. This will help you evaluate what works best for your workflows and budget approval process.",
+    "follow_up_in_days": 3
+  },
+  {
+    "ticket_id": "T012",
+    "account_id": "A003",
+    "route": "scheduled",
+    "urgency_score": 6,
+    "reason": "Positive expansion opportunity with high-intent customer requiring coordinated onboarding guidance best handled by existing CSM relationship.",
+    "suggested_owner": "CSM",
+    "draft_response": "Thanks for reaching out about expanding to your analytics team\u2014we're excited to support this growth. Morgan Lee, your CSM, will connect with you this week to share our best-practice setup guide tailored to analytics workflows and coordinate a rollout plan that minimizes friction for your team. We'll also walk through your usage trends, which show strong adoption momentum.",
+    "follow_up_in_days": 3
+  }
+]

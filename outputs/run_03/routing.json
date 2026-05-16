@@ -1,0 +1,91 @@
+{
+  "ticket_routing": {
+    "escalation": 9,
+    "scheduled": 3
+  },
+  "owner_distribution": {
+    "Exec": 5,
+    "TAM": 5,
+    "CSM": 2
+  },
+  "ticket_queues": {
+    "immediate": [],
+    "scheduled": [
+      {
+        "ticket_id": "T005",
+        "account_id": "A012",
+        "urgency": 4,
+        "reason": "Low-severity enablement issue with flat usage and neutral sentiment; aligns with existing permissions follow-up from 2026-04-23 call."
+      },
+      {
+        "ticket_id": "T011",
+        "account_id": "A006",
+        "urgency": 3,
+        "reason": "Low-severity expansion inquiry from high-intent account; should coordinate with Riley's planned premium automation options follow-up from 2026-04-22 call."
+      },
+      {
+        "ticket_id": "T012",
+        "account_id": "A003",
+        "urgency": 6,
+        "reason": "Expansion opportunity with high-intent customer requires coordinated TAM support and rollout planning, not immediate self-service resolution."
+      }
+    ],
+    "escalation": [
+      {
+        "ticket_id": "T001",
+        "account_id": "A008",
+        "urgency": 9,
+        "reason": "High-severity unresolved blocker (SSO failures) blocking implementation at enterprise customer with $240k contract and renewal in 43 days; executive involvement + declining health metrics (NPS 2, usage down 19% in 2 weeks) indicate imminent churn risk."
+      },
+      {
+        "ticket_id": "T002",
+        "account_id": "A002",
+        "urgency": 9,
+        "reason": "High severity blocker with repeated failures, enterprise contract worth $128k renewing in 62 days, health score declining, and prior escalation commitment unfulfilled."
+      },
+      {
+        "ticket_id": "T003",
+        "account_id": "A014",
+        "urgency": 9,
+        "reason": "High-severity blocker (mobile onboarding failure) combined with imminent renewal (22 days), declining health score, and NPS of 3 creates immediate churn risk."
+      },
+      {
+        "ticket_id": "T004",
+        "account_id": "A010",
+        "urgency": 8,
+        "reason": "Renewal in 65 days with declining health (58\u219263), sustained usage drop across three weeks, and trust issues in core reporting functionality signal churn risk requiring immediate intervention."
+      },
+      {
+        "ticket_id": "T006",
+        "account_id": "A017",
+        "urgency": 9,
+        "reason": "High severity with declining health (46), renewal in 85 days, no champion, and explicit request for platform reset signals churn risk requiring immediate executive intervention."
+      },
+      {
+        "ticket_id": "T007",
+        "account_id": "A005",
+        "urgency": 9,
+        "reason": "High-severity renewal blocker within 45 days with declining usage trend and executive sponsor requiring immediate deliverable by Friday."
+      },
+      {
+        "ticket_id": "T008",
+        "account_id": "A004",
+        "urgency": 8,
+        "reason": "Ownership transition combined with declining health score (54), plummeting usage, and renewal within 4 months creates churn risk requiring immediate executive intervention."
+      },
+      {
+        "ticket_id": "T009",
+        "account_id": "A015",
+        "urgency": 8,
+        "reason": "Strategic $300K enterprise account with renewal in 6 months has unresolved roadmap blocker impacting their rollout timeline."
+      },
+      {
+        "ticket_id": "T010",
+        "account_id": "A001",
+        "urgency": 8,
+        "reason": "At-risk renewal (75 days out) with steep adoption decline in reporting module and unresolved blocker directly tied to CSM intervention goal."
+      }
+    ]
+  },
+  "quality_review_escalations": 2
+}

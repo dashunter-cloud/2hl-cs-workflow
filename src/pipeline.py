@@ -92,8 +92,30 @@ def run_pipeline(run_id: str, *, sample_accounts: int | None = None,
     routing_result = routing.run(triages, quality_results)
     (output_dir / "routing.json").write_text(json.dumps(routing_result, indent=2))
 
-    # Run-level telemetry summary
+    # Run-level telemetry summary + parse-error and escalation counts
+    # (surfaced explicitly so reviewers see failure rates, not just costs)
     summary = telemetry.summary()
+    parse_errors_by_stage: dict[str, int] = {}
+    for r in reviews:
+        if r.get("_parse_error"):
+            parse_errors_by_stage["account_review"] = parse_errors_by_stage.get("account_review", 0) + 1
+    for t in triages:
+        if t.get("_parse_error"):
+            parse_errors_by_stage["inbound_triage"] = parse_errors_by_stage.get("inbound_triage", 0) + 1
+    for b in checkin_briefs:
+        if b.get("_parse_error"):
+            parse_errors_by_stage["checkin_prep"] = parse_errors_by_stage.get("checkin_prep", 0) + 1
+    for q in quality_results:
+        if q.get("first_review", {}).get("_parse_error"):
+            parse_errors_by_stage["quality_review"] = parse_errors_by_stage.get("quality_review", 0) + 1
+        if q.get("judge", {}).get("_parse_error"):
+            parse_errors_by_stage["quality_judge"] = parse_errors_by_stage.get("quality_judge", 0) + 1
+    quality_escalations = sum(
+        1 for q in quality_results if str(q.get("consensus", "")).startswith("escalate")
+    )
+    ticket_escalations = sum(
+        1 for t in triages if t.get("route") == "escalation"
+    )
     run_summary = {
         "run_id": run_id,
         "stage_counts": {
@@ -101,6 +123,12 @@ def run_pipeline(run_id: str, *, sample_accounts: int | None = None,
             "tickets_triaged": len(ticket_ids),
             "checkins_prepared": len(checkin_ids),
             "outputs_reviewed": len(output_ids),
+        },
+        "failure_signals": {
+            "parse_errors_by_stage": parse_errors_by_stage,
+            "ticket_escalations": ticket_escalations,
+            "quality_review_escalations": quality_escalations,
+            "intervention_triggered": bool(intervention_result.get("segment_issue_detected")) if intervention_result else False,
         },
         "telemetry_summary": summary,
     }

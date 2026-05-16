@@ -4,7 +4,7 @@
 **Email:** dashunter@gmail.com
 **Date submitted:** 16 May 2026
 **Starter project version:** Synthetic CS dataset (8 CSVs)
-**Other AI tools used, if any:** None during the assessment. Claude Code (Sonnet 4.6) was the sole AI building partner.
+**Other AI tools used:** After completing the implementation and the 5-run measured execution, I ran an independent code-review pass with two external models — Codex (OpenAI gpt-5.5 via the Codex CLI in read-only mode) and Gemini 3 Pro Preview (via the Gemini CLI in read-only mode). Both were given the same brief: review architecture, cost-tier routing, the separate-model judge, code quality, and anything missing. Findings were applied as: stale docstring fixes, retry-count alignment, parse-error reporting added to run_summary, known-limitations section in README, evidence packet table in README. The external reviewers' raw outputs are not in the repo (they were transient CLI sessions) but the convergent verdict was: architecture A/A-, judge anchoring is the biggest known limitation, prompt caching is the biggest production lever. The session log captures their suggestions where applied.
 
 ---
 
@@ -58,6 +58,8 @@ I reviewed every output before accepting it:
 | `ModuleNotFoundError: dotenv` | First `python run.py` attempt | Added `python-dotenv` to requirements + pip install | Caught at smoke-test stage, not at final-run stage |
 | Quality review parse errors on all 8 outputs (smoke test) | Spot-check of `quality_reviews.json` after smoke run | Bumped `max_tokens` from 700 to 1500 | Diagnosed via `repr(raw)` inspection - found the response was excellent but truncated mid-JSON because the scoring rationales were verbose |
 | Intervention not triggering on smoke run with 3 accounts | Inspecting `intervention.json` showed `segment_issue_detected: false` | This was correct behaviour: only 2 accounts in the 3-sample shared a declining-trend signal across different segments. Full 5-run on 18 accounts produced the expected result | Caught at output-inspection step, not silently passed |
+| First 5-run was tracking at ~5 min per run (sequential calls within stages) | Watching telemetry.jsonl line count grow during run 1 - it was crawling | Killed the run, parallelised each stage that iterates over independent items (account_review, inbound, checkin, quality) with ThreadPoolExecutor(max_workers=4-8), restarted | Realised mid-build that wall-clock time mattered for the assessment; refactored four stage modules to use threaded execution while preserving sequential semantics within each output's first-review-then-judge step |
+| Sonnet 4.6 RateLimitError (429): 8,000 output tokens/min on the parallel quality stage in run 2 | Stack trace from the retry run | Two fixes that also improved the architecture: (a) switched the JUDGE from Sonnet to Haiku, which is the actual cost-tiered discriminator pattern (judge is structurally cheaper than generator, and a different model size gives stronger separation than same-model-same-call); (b) added a retry-with-backoff on `RateLimitError` in the client wrapper; (c) reduced quality-stage parallelism from 4 to 2 to keep Sonnet usage under the cap | The original spec had judge=Sonnet which was a weaker version of the architecture. The rate limit forced the better design |
 
 ## 5. Design Decisions
 

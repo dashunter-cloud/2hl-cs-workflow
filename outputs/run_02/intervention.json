@@ -1,0 +1,30 @@
+{
+  "segment_issue_detected": true,
+  "trigger": {
+    "segment": "Mid-Market",
+    "account_ids": [
+      "A001",
+      "A010",
+      "A014"
+    ]
+  },
+  "plan": {
+    "segment_label": "Mid-Market accounts with declining usage, reporting/data-quality complaints, and renewals within 90 days",
+    "affected_accounts": [
+      "A001",
+      "A010",
+      "A014"
+    ],
+    "root_cause_hypothesis": "Across all three accounts, power-user counts have dropped 25-35% over three weeks (A001: 40\u219225, A010: 38\u219227, A014: 37\u219233) coinciding with concrete product friction: A001 reports dashboard exports missing recent data (T010, frustrated), A010 has a power user explicitly questioning the usage dashboard drop (T004), and A014 has a mobile onboarding bug blocking new user activation (T003, negative). The common thread is that the reporting/data-surface and onboarding flows are failing to demonstrate value to the users who drive renewal advocacy\u2014NPS has collapsed (A014: 3, A001: 6, A010: 5) and health scores have dropped 9-19 points. The decline is not generic disengagement; it is a trust failure in data accuracy and onboarding completion, which is especially damaging given A014 renews in ~30 days and A001/A010 in ~75 days.",
+    "intervention_plan": {
+      "action": "Run a CSM-led 'Reporting & Onboarding Recovery' play per account: (1) confirm fix or workaround for each open ticket (T003 mobile onboarding, T010 export data freshness, T004 dashboard interpretation) with Product/Support before the call, (2) hold a 45-min executive working session with each account's admin + top power users to walk through the fix, retrain on the reporting module, and co-build a 30-day adoption plan with named power-user champions and weekly check-ins, (3) deliver a follow-up written value recap tied to their contract.",
+      "delivery_method": "CSM-led call",
+      "target_owner": "CSM",
+      "rollout_timing": "this week"
+    },
+    "success_metric": "Restore weekly power-users to baseline (\u226535 for A001, \u226538 for A010, \u226537 for A014), close all three open tickets with confirmed customer sign-off, and lift health score by \u226510 points per account within the measurement window; A014 renewal commitment secured.",
+    "measurement_window_days": 30,
+    "fallback_if_intervention_fails": "Escalate to executive sponsor outreach: VP Customer Success + Product GM joint call with each account's economic buyer, offer a contract concession or pilot credit on the affected module, and for A014 specifically initiate a short-term renewal extension (30-60 days) to buy remediation time while Sales/Deal Desk prepares retention pricing.",
+    "estimated_effort_hours": 18
+  }
+}

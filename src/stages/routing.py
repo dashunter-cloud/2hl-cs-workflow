@@ -5,8 +5,9 @@ upstream already made the recommendation (route field on each triage
 result). This stage applies the policy, produces the work-assignment
 queues, and counts what would have been escalated to humans.
 
-Cost: $0. Listed in telemetry as a free stage so the cost summary is
-honest about what costs what.
+Cost: $0. Not logged in telemetry (which records API calls only). The
+cost summary captures this stage's behaviour via the ticket_routing and
+quality_review_escalations counts in routing.json, not via tokens.
 """
 from collections import Counter
 

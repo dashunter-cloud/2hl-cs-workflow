@@ -43,17 +43,37 @@ class ClaudeClient:
     ) -> dict:
         """Run a single Claude call. Returns parsed JSON if possible, else
         a dict with {"raw": "..."} on parse failure.
+
+        Retries with linear backoff on 429 (rate limit), 529 (overloaded),
+        and 503 (service unavailable). Five attempts max with 5s/10s/15s/20s/25s
+        backoff between them.
         """
+        from anthropic import RateLimitError
         system_prompt = self._load_prompt(system_prompt_name)
         model = MODEL_FOR_TIER[tier]
         t0 = time.monotonic()
 
-        resp = self.client.messages.create(
-            model=model,
-            max_tokens=max_tokens,
-            system=system_prompt,
-            messages=[{"role": "user", "content": user_content}],
-        )
+        from anthropic import APIStatusError
+        last_err = None
+        for attempt in range(5):
+            try:
+                resp = self.client.messages.create(
+                    model=model,
+                    max_tokens=max_tokens,
+                    system=system_prompt,
+                    messages=[{"role": "user", "content": user_content}],
+                )
+                break
+            except (RateLimitError, APIStatusError) as e:
+                # Retry on 429 (rate limit) and 529 (overloaded).
+                status = getattr(e, "status_code", None)
+                if isinstance(e, RateLimitError) or status in (429, 529, 503):
+                    last_err = e
+                    time.sleep(5 + attempt * 5)
+                    continue
+                raise
+        else:
+            raise last_err
 
         latency_ms = int((time.monotonic() - t0) * 1000)
         in_tokens = resp.usage.input_tokens

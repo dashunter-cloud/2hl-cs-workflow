@@ -1,0 +1,30 @@
+{
+  "segment_issue_detected": true,
+  "trigger": {
+    "segment": "Mid-Market",
+    "account_ids": [
+      "A001",
+      "A010",
+      "A014"
+    ]
+  },
+  "plan": {
+    "segment_label": "Mid-Market accounts with declining usage, reporting/data issues, and renewal in <90 days",
+    "affected_accounts": [
+      "A001",
+      "A010",
+      "A014"
+    ],
+    "root_cause_hypothesis": "Across all three accounts, power-user counts have dropped 30-35% over 14 days (A001: 40\u219225, A010: 38\u219227, A014: 37\u219233), coinciding with open tickets pointing to data reliability and adoption friction. A001 (T010) and A010 (T004) both involve the reporting/dashboard module \u2014 A001 explicitly reports missing recent data in dashboard exports, and A010's power user is questioning the very usage drop we're observing, suggesting a possible data freshness/pipeline issue affecting reporting trust. A014 (T003) has a distinct but equally severe issue: a mobile onboarding bug blocking new user activation, which explains the steep health drop (71\u219252) and NPS of 3. The shared pattern is that product reliability defects are eroding power-user engagement right before renewal, with NPS scores (6, 5, 3) confirming declining sentiment.",
+    "intervention_plan": {
+      "action": "Two-track intervention: (1) Engineering hotfix and root-cause triage for the reporting data-freshness defect (A001, A010) plus the mobile onboarding bug (A014), followed by (2) a CSM-led 'renewal recovery' call to each account that delivers the fix confirmation, walks through restored reporting/onboarding flows, and re-establishes value with the executive sponsor.",
+      "delivery_method": "CSM-led call",
+      "target_owner": "CSM",
+      "rollout_timing": "this week"
+    },
+    "success_metric": "Restore weekly power-users in the segment to baseline (\u226535 per account, matching 2026-04-10 levels) and close all three open tickets within the measurement window; secure verbal renewal commitment from A014 before 2026-05-20.",
+    "measurement_window_days": 21,
+    "fallback_if_intervention_fails": "Escalate to VP of Customer Success and Product leadership; offer A014 a 30-day renewal extension with service credit; engage executive sponsor outreach for A001 and A010 and initiate save-play with discount authority up to 10%.",
+    "estimated_effort_hours": 32
+  }
+}

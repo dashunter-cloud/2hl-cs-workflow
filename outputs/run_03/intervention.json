@@ -1,0 +1,30 @@
+{
+  "segment_issue_detected": true,
+  "trigger": {
+    "segment": "Mid-Market",
+    "account_ids": [
+      "A001",
+      "A010",
+      "A014"
+    ]
+  },
+  "plan": {
+    "segment_label": "Mid-Market accounts with declining usage, reporting/data quality complaints, and renewals within 90 days",
+    "affected_accounts": [
+      "A001",
+      "A010",
+      "A014"
+    ],
+    "root_cause_hypothesis": "All three accounts show a consistent 3-week decline in active and power users (A001: 106\u219282, A010: 104\u219287, A014: 99\u219287) concentrated in reporting and mobile workflows. Open tickets point to a common data-trust issue: A001 reports missing recent data in dashboard exports (T010), A010's power user is questioning a confirmed reporting module usage drop (T004), and A014 has a mobile onboarding bug blocking new users (T003). NPS has collapsed in parallel (A001=6, A010=5, A014=3) and health scores are all trending down. The evidence suggests a product reliability regression in the reporting/export pipeline (and a separate mobile onboarding bug for A014) is eroding power-user confidence right before renewal, not a generic engagement gap.",
+    "intervention_plan": {
+      "action": "Launch a 'Reporting & Mobile Reliability Recovery' play: (1) Product/engineering confirms and patches the dashboard export data-freshness issue and the mobile onboarding bug, with a written root-cause + fix ETA shared per account; (2) CSMs (Taylor for A001/A010, Morgan for A014) run a 45-min executive call walking through the fix, a refreshed reporting adoption plan, and a power-user re-enablement session targeting the declining cohorts.",
+      "delivery_method": "CSM-led call",
+      "target_owner": "CSM",
+      "rollout_timing": "this week"
+    },
+    "success_metric": "Restore weekly active users to \u2265100 and power users to \u226535 per account (baseline from 2026-04-10) and close all three flagged tickets (T010, T004, T003) with customer confirmation within the measurement window; secure verbal renewal commitment from A014 before 2026-05-20.",
+    "measurement_window_days": 30,
+    "fallback_if_intervention_fails": "Escalate to VP Customer Success and Head of Product for a joint executive sponsor outreach; offer A014 a 60-day renewal extension or month-to-month bridge while bug is resolved, and convert A001/A010 to a save-plan with pricing concession tied to a 6-month adoption SLA.",
+    "estimated_effort_hours": 32
+  }
+}

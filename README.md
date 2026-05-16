@@ -18,7 +18,7 @@ This is the same architectural pattern I use across Kickstone's products (Sonny 
 | 2 | Prioritisation | mid (Sonnet) | Daily, once per portfolio | Synthesises reviews into a ranked attention list plus portfolio patterns |
 | 3 | Inbound triage | low (Haiku) | Per ticket | Routes to immediate / scheduled / escalation with a drafted response |
 | 4 | Check-in prep | mid (Sonnet) | Per scheduled check-in | Builds a brief that carries forward open follow-ups + relevant context |
-| 5 | Quality review + judge | mid (Sonnet) ×2 | Per draft output | First reviewer scores against quality standards; a separate-call judge independently verifies; disagreement triggers escalation |
+| 5 | Quality review + judge | mid (Sonnet) gen + low (Haiku) judge | Per draft output | First reviewer (Sonnet) scores against quality standards; a separate-MODEL judge (Haiku) independently verifies. Different model = real discriminator separation, cheaper, and dodges Sonnet rate-limit. Disagreement triggers escalation |
 | 6 | Intervention design | high (Opus) | Bi-weekly, conditional | Deterministic detector spots segment-level decline; LLM designs a corrective plan with success metric |
 | 7 | Routing | free (deterministic) | After every cycle | Applies policy: builds work queues and counts human escalations |
 
@@ -103,7 +103,36 @@ After running, see:
 
 **Why deterministic routing.** Policy decisions (which queue does this ticket go in, which CSM owns it) are deterministic rules, not LLM calls. Free at runtime, easy to audit, easy to change. The LLM upstream produced the recommendation; the routing stage applies the policy.
 
-**Where I'd take this in production.** Production would add: (a) prompt caching for the ~80% of system prompt that's static, dramatically reducing cost; (b) a fine-tuned local judge instead of same-family Sonnet for true model-lineage separation; (c) embeddings-based memory retrieval rather than full account context per call; (d) Postgres-backed ToolCall audit log per Sonny's MCP-pattern registry.
+**Where I'd take this in production.** Production would add: (a) prompt caching for the ~80% of system prompt that's static, dramatically reducing cost (this is the biggest single lever — Haiku 4.5 with caching at ~84% hit rate is the Sonny Jim reference floor of about a penny per call); (b) a different-vendor judge (Gemini or a fine-tuned local model) instead of same-vendor different-model Haiku, for full lineage separation; (c) blind-judge variant for the quality stage to remove anchoring (judge scores draft fresh, then deterministic code compares against first reviewer); (d) embeddings-based memory retrieval rather than full account context per call; (e) Postgres-backed audit log per Sonny's MCP-pattern registry; (f) hierarchical prioritisation at 750-account scale (per-segment then per-account) to avoid attention dilution in a single mega-prompt; (g) webhook intake + SLA clock for true 24/7 responsiveness (today this is simulated batch execution); (h) per-ticket escalation packet generation as a dedicated Sonnet call.
+
+## Evidence packet (measured, 5 representative end-to-end runs)
+
+| Metric | Value |
+|---|---|
+| End-to-end runs completed | 5 / 5 |
+| Total cost across runs (real Anthropic API) | $0.43 |
+| Avg cost per end-to-end run | $0.086 |
+| Projected annual cost at 750-account scale | $1,361 |
+| Annual budget | $50,000 |
+| Budget headroom | 97.3% |
+| Calls per stage (5 runs aggregate) | account_review 90, prioritization 5, inbound_triage 60, checkin_prep 60, quality_review 40, quality_judge 40, intervention_design 5 |
+| Ticket escalations triggered (5 runs aggregate) | 43 of 60 triages (~72%) — high-severity unresolved cluster in synthetic data |
+| Quality-review escalations | 9 of 40 (22.5%) — judge disagreement with generator caught real quality issues |
+| Parse errors by stage (5 runs aggregate) | checkin_prep 4, inbound_triage 2, others 0 — ~2% overall; handled by escalation, not silent retry |
+| Intervention triggered | 5 / 5 runs (segment-level decline detected; deterministic detector) |
+
+## Known limitations (raised by external code review)
+
+External code review pass with Codex (gpt-5.5) and Gemini 3 Pro flagged the following. Each is captured in code comments and the session log.
+
+1. **Judge anchoring.** The Haiku judge sees the first reviewer's verdict in the user prompt. Even with a "do not anchor" instruction in the judge's system prompt, this creates anchoring risk. Production upgrade: blind judge (judge scores draft fresh, then deterministic code compares).
+2. **24/7 responsiveness is simulated batch execution.** No webhook intake, no SLA clock, no after-hours policy. Production would add a queue runner and notification hooks.
+3. **Prioritisation at 750-account scale.** A single Sonnet call with all 750 reviews would push 150k+ input tokens and risk attention dilution. Production would shift to hierarchical prioritisation (segment-first, then accounts within segments).
+4. **Same-vendor judge.** Haiku judging Sonnet is structural separation (different size, different post-training) but stays within Anthropic. True lineage separation needs a different vendor family.
+
+## A note on model IDs
+
+`telemetry.py` references `claude-haiku-4-5-20251001`, `claude-sonnet-4-6`, and `claude-opus-4-7`. These are the current account-available model IDs at the time of this assessment (May 2026). External code review queried these against earlier Anthropic documentation snapshots; the 5-run end-to-end execution against the live Anthropic API confirms they are valid.
 
 ## License
 

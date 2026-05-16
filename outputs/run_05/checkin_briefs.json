@@ -1,0 +1,427 @@
+[
+  {
+    "account_id": "A008",
+    "checkin_id": "C001",
+    "headline": "Harbor Insurance is in critical implementation distress with a declining health score (48), active SSO failures blocking admin users, and a renewal in 39 days requiring immediate recovery action to retain the $240K contract.",
+    "objectives": [
+      "Confirm status of technical escalation on SSO failures and establish a concrete, dated resolution commitment the executive sponsor can hold us to",
+      "Align on a revised, realistic rollout unblock plan with clear milestones between now and the 2026-06-12 renewal",
+      "Rebuild executive confidence by demonstrating ownership, accountability, and a credible path forward"
+    ],
+    "topics_to_cover": [
+      "SSO failure status: summary of T001 findings, what support has confirmed, and next technical steps",
+      "Technical escalation update (carry-forward from 2026-04-17 call): who owns it, what progress has been made, and timeline to resolution",
+      "Rollout unblock plan: revised timeline, dependencies, and what Harbor Insurance needs to do vs. what we own",
+      "Usage decline acknowledgment: active users dropped from 301 to 245 (-19%) in two weeks \u2014 validate root cause and impact on adoption",
+      "Executive confidence: address sponsor frustration directly, set communication cadence through resolution",
+      "Renewal health: acknowledge proximity of 2026-06-12 renewal and frame recovery plan as prerequisite to renewal conversation"
+    ],
+    "open_followups_from_last_call": [
+      "CSM (Morgan Lee) committed to coordinating a technical escalation for the SSO blocker \u2014 confirm this was initiated, who it was escalated to, and current status"
+    ],
+    "risks_to_flag": [
+      "Renewal is 39 days out (2026-06-12) with health score at 48 and declining \u2014 churn risk is high if SSO is not resolved within the next 1\u20132 weeks",
+      "Active user count has dropped 19% in 14 days; if SSO remains broken, further disengagement will be very difficult to reverse before renewal",
+      "NPS of 2 and frustrated executive sponsor (T001) indicate relationship damage beyond technical issues \u2014 recovery requires executive-to-executive engagement if confidence is not restored on this call",
+      "9 support tickets in 30 days signals systemic friction; SSO may not be the only blocker to a successful rollout"
+    ],
+    "expansion_or_advocacy_angle": null,
+    "questions_to_ask_customer": [
+      "Beyond the SSO failures, are there other blockers or friction points your team has encountered during the rollout that we haven't fully addressed yet?",
+      "What would a successful resolution look like to your executive sponsor over the next two weeks \u2014 what specifically needs to happen for confidence to be restored?",
+      "Given the rollout delays, how are your internal stakeholders feeling about the platform right now, and is there risk of the project losing organizational support?",
+      "If we can deliver a confirmed SSO fix and a clear go-live date by end of this week, what would need to be true for your team to feel confident moving forward through the June renewal?"
+    ],
+    "preparation_time_estimate_minutes": 35
+  },
+  {
+    "account_id": "A005",
+    "checkin_id": "C002",
+    "headline": "Evergreen Finance enters a high-stakes renewal value review with a declining health score (67, down from 76), a 15% drop in active users over three weeks, and an exec sponsor requesting a concrete ROI summary\u2014renewal is 23 days away.",
+    "objectives": [
+      "Deliver and walk through the renewal value snapshot (promised on 2026-04-23) to directly address the exec sponsor's ROI summary request before the Friday deadline on T007",
+      "Diagnose the root cause of the 15% active-user decline (299 \u2192 255) and agree on a concrete remediation or re-engagement plan",
+      "Secure a clear renewal intent signal or identify remaining blockers to close before 2026-05-28"
+    ],
+    "topics_to_cover": [
+      "Present prepared renewal value snapshot: ROI metrics, business outcomes, and key wins since contract start",
+      "Review adoption trend data (active users 299 \u2192 255, power users 102 \u2192 91 over three weeks) and explain the decline",
+      "Acknowledge NPS of 5 \u2014 ask what is driving dissatisfaction and what would move the score",
+      "Address T007 (High severity, exec sponsor usage summary request) and confirm the Friday deadline is met",
+      "Discuss renewal timeline, decision-making process, and who else needs to be involved by 2026-05-28",
+      "Explore medium expansion signal: whether there is appetite to grow seats or add capabilities post-renewal"
+    ],
+    "open_followups_from_last_call": [
+      "Prepare and deliver renewal value snapshot (committed 2026-04-23 \u2014 now overdue per T007 Friday deadline)"
+    ],
+    "risks_to_flag": [
+      "Health score declined 9 points since last measurement; trajectory is negative heading into renewal",
+      "Active user count has fallen ~15% in three weeks \u2014 signals disengagement that could justify a downsell or churn if not addressed",
+      "NPS of 5 indicates executive or user dissatisfaction that may be influencing the sponsor's renewal posture",
+      "T007 is High severity and status is 'new' \u2014 the usage summary has not been delivered yet, which risks damaging sponsor trust days before renewal",
+      "Renewal is only 23 days out with no confirmed intent signal on record"
+    ],
+    "expansion_or_advocacy_angle": "Expansion signal is rated medium, but this should not be pursued until renewal risk is neutralized. If the call surfaces a stabilized commitment and the sponsor acknowledges value, introduce a targeted conversation around expanding power-user enablement or adding a department that was previously out of scope \u2014 frame it as accelerating the ROI already demonstrated rather than upselling.",
+    "questions_to_ask_customer": [
+      "When you look at the outcomes your team set out to achieve when you signed with us, which ones do you feel have been delivered and which ones still feel unmet?",
+      "We've seen active usage decline over the past three weeks \u2014 from your vantage point, what has changed in how your teams are using the platform day-to-day?",
+      "You scored us a 5 on NPS \u2014 can you tell me specifically what would need to be different for that number to be an 8 or 9?",
+      "As you head into the renewal decision, who else is involved in sign-off, and what does each of them need to see to feel confident moving forward?"
+    ],
+    "preparation_time_estimate_minutes": 55
+  },
+  {
+    "account_id": "A014",
+    "checkin_id": "C003",
+    "headline": "Northstar Travel enters renewal discussions (2026-05-20) with a declining health score of 52, an NPS of 3, a broken mobile onboarding flow actively blocking field-team adoption, and no mobile onboarding plan yet delivered from the last call.",
+    "objectives": [
+      "Confirm a concrete resolution timeline for T003 (mobile onboarding bug) and unblock field-team adoption before renewal date",
+      "Deliver and align on the mobile onboarding plan promised on 2026-04-16",
+      "Secure verbal renewal intent and identify any outstanding concerns that could jeopardize the 2026-05-20 renewal"
+    ],
+    "topics_to_cover": [
+      "Status update and resolution ETA for T003 \u2014 mobile users unable to complete onboarding steps",
+      "Delivery and walkthrough of the mobile onboarding plan (overdue from 2026-04-16 call)",
+      "Declining usage trend: active users down from 99 to 87 and power users down from 37 to 30 over 3 weeks",
+      "Renewal timeline, contract review, and any blockers to signing before 2026-05-20",
+      "NPS score of 3 \u2014 understanding the root cause and what would move the needle for the customer"
+    ],
+    "open_followups_from_last_call": [
+      "Send mobile onboarding plan to Northstar Travel (committed 2026-04-16, not yet confirmed as delivered)"
+    ],
+    "risks_to_flag": [
+      "Renewal is 15 days away with a health score of 52 and NPS of 3 \u2014 churn risk is elevated",
+      "T003 (mobile onboarding bug, sev=Medium) is open and unresolved; it is directly blocking the adoption goal and may be influencing the renewal decision",
+      "Consistent 3-week decline in active and power users suggests the onboarding issue is already eroding engagement at scale",
+      "Negative sentiment on T003 combined with low NPS indicates customer trust is at risk \u2014 unresolved issues going into renewal discussions could harden a negative position"
+    ],
+    "expansion_or_advocacy_angle": null,
+    "questions_to_ask_customer": [
+      "How many field-team members have been affected by the mobile onboarding issue, and what has the day-to-day operational impact looked like for your team since this started?",
+      "When you think about what would need to be true for you to feel confident renewing on May 20th, what are the one or two things that matter most right now?",
+      "Beyond the mobile bug, are there other areas where the product isn't meeting what your team expected when you signed?",
+      "What does a successful mobile rollout look like for your field team by end of Q2, and how can we build the onboarding plan around that outcome?"
+    ],
+    "preparation_time_estimate_minutes": 30
+  },
+  {
+    "account_id": "A003",
+    "checkin_id": "C004",
+    "headline": "Cobalt Health is in a strong growth trajectory with rising active users and a confirmed analytics team expansion, entering this call ready to plan a new department rollout with best-practice configuration guidance needed.",
+    "objectives": [
+      "Align on a concrete rollout plan and timeline for the analytics department expansion",
+      "Walk through best-practice configuration recommendations to unblock the analytics team (T012)",
+      "Identify any additional stakeholders or dependencies that could affect rollout success"
+    ],
+    "topics_to_cover": [
+      "Status update on analytics team readiness and expected user headcount for the new department",
+      "Best-practice setup walkthrough for analytics department onboarding (ties to T012)",
+      "Rollout plan review: phasing, milestones, and ownership on Cobalt Health's side",
+      "Usage growth trends (active users up from 243 to 294 in two weeks) and what's driving adoption",
+      "Contract and expansion scope: seats, modules, or feature tiers needed for analytics rollout",
+      "Renewal horizon check-in (2026-12-01) and alignment on value realization before renewal"
+    ],
+    "open_followups_from_last_call": [
+      "Share rollout plan with Cobalt Health team (committed on 2026-04-25 call \u2014 confirm this was delivered and gather feedback)"
+    ],
+    "risks_to_flag": [
+      "Best-practice configuration gap for the analytics department (T012) must be resolved before rollout to avoid poor first-impression adoption in the new team",
+      "No rollout plan confirmation received post-04-25 call \u2014 if not yet shared, this is a trust and momentum risk",
+      "Rapid user growth (21% increase in active users over two weeks) may stress current configuration or support capacity if not proactively managed"
+    ],
+    "expansion_or_advocacy_angle": "With an NPS of 9, high expansion signal, and a health score trending upward, this is a strong moment to ask for a reference or case study from a power-user champion within Cobalt Health, and to formally scope the analytics expansion as an upsell opportunity before the 2026-12-01 renewal.",
+    "questions_to_ask_customer": [
+      "How many users are you anticipating in the analytics department rollout, and what does your internal timeline look like for getting them onboarded?",
+      "Since we discussed the rollout plan on April 25th, what feedback or concerns have come up internally as you've moved toward launch?",
+      "What does success look like for the analytics team specifically in their first 60 days on the platform \u2014 are there particular workflows or outputs they're being measured on?",
+      "Given the strong adoption growth you're already seeing, are there other teams or use cases at Cobalt Health starting to express interest in the platform?"
+    ],
+    "preparation_time_estimate_minutes": 20
+  },
+  {
+    "account_id": "A006",
+    "checkin_id": "C005",
+    "headline": "Futura Robotics is showing strong and accelerating platform adoption with 54 power-users and a rising health score, entering this call primed to explore premium automation expansion pending internal budget approval.",
+    "objectives": [
+      "Confirm status of internal budget approval process for premium automation upgrade",
+      "Map Futura Robotics' specific automation use cases to premium feature capabilities and limits",
+      "Identify a clear next step toward a formal expansion proposal or trial"
+    ],
+    "topics_to_cover": [
+      "Current automation usage and where power-users are hitting friction or limits",
+      "Premium automation feature overview tailored to robotics/manufacturing workflows",
+      "Automation limit thresholds on current plan vs. premium tier",
+      "Budget approval timeline and stakeholders involved",
+      "Usage growth trajectory and how premium features would scale with their team",
+      "Open ticket T011: directly address their question on premium automation feature limits"
+    ],
+    "open_followups_from_last_call": [
+      "Send premium automation options (committed on 2026-04-22 call) \u2014 confirm this was received and review content together"
+    ],
+    "risks_to_flag": [
+      "Budget approval has not yet been confirmed \u2014 stalling here could delay expansion past a comfortable window before the 2026-09-30 renewal",
+      "Rapid user growth (77 \u2192 98 active users in two weeks) may cause current plan limits to become a friction point before procurement is finalized",
+      "Ticket T011 is still 'new' and unresolved \u2014 CSM should ensure this is addressed on the call to avoid perceived neglect despite positive sentiment"
+    ],
+    "expansion_or_advocacy_angle": "Futura Robotics has strong NPS (8), a growing power-user base, and a high expansion signal \u2014 this is an ideal candidate for a premium automation upgrade ahead of renewal. Closing expansion by Q3 2026 would increase contract value and set up a smooth renewal conversation. If budget is approved soon, consider positioning an early-renewal incentive tied to the premium tier.",
+    "questions_to_ask_customer": [
+      "Where are your power-users running into the edges of what automation can do today \u2014 what workflows are they trying to build that feel out of reach?",
+      "What does the internal budget approval process look like on your end, and who else needs to be part of the conversation before a decision can move forward?",
+      "Since we sent over the premium automation options after our last call, what resonated most with your team and what questions came up?",
+      "Given how quickly your active user count has grown over the past month, how are you thinking about scaling your automation footprint over the next two quarters?"
+    ],
+    "preparation_time_estimate_minutes": 20
+  },
+  {
+    "account_id": "A010",
+    "checkin_id": "C006",
+    "headline": "Juniper Manufacturing enters this call with three consecutive weeks of declining active users (104\u219287) and power users (38\u219227), an unresolved data freshness investigation, and a renewal just 8 weeks out at a health score of 58.",
+    "objectives": [
+      "Confirm root cause of the reporting module usage drop and align on a concrete remediation plan with owner and timeline",
+      "Rebuild trust in report export data by presenting findings from the data freshness investigation carried over from 2026-04-24",
+      "Assess renewal risk and gauge Juniper's sentiment toward the platform ahead of the 2026-07-02 renewal"
+    ],
+    "topics_to_cover": [
+      "Reporting usage drop: 3-week declining trend across active and power users \u2014 walk through the data and explain contributing factors",
+      "Export data trust issue: share findings from the data freshness investigation; clarify data pipeline latency or any confirmed bugs",
+      "T004 resolution: address the power user's specific confusion around dashboard interpretation; confirm whether support ticket can be closed",
+      "Departmental impact: identify which two departments are most affected and whether usage decline is spreading",
+      "Renewal timeline awareness: soft touchpoint on contract expiring 2026-07-02 and any internal decisions underway",
+      "Next steps and owner accountability: assign clear action items before close of call"
+    ],
+    "open_followups_from_last_call": [
+      "Investigate data freshness issue flagged on 2026-04-24 \u2014 status and findings must be presented on this call"
+    ],
+    "risks_to_flag": [
+      "Renewal is 8 weeks out (2026-07-02) with a declining health score (58, down from 63) and an NPS of 5 \u2014 churn risk is elevated",
+      "Power user base has shrunk 29% in three weeks (38\u219227); loss of internal champions can accelerate broader disengagement",
+      "Distrust in export data, if unresolved, may cause teams to abandon the reporting module entirely and seek alternative tools",
+      "6 support tickets in 30 days signals compounding friction; sentiment trending neutral but could worsen without visible progress",
+      "No contact since 2026-04-24 \u2014 13-day gap heading into a critical recovery call increases perception of CSM absence"
+    ],
+    "expansion_or_advocacy_angle": "Expansion signal is rated medium, but it should not be pursued until the usage and data trust issues are demonstrably resolved. If remediation lands well on this call, a natural follow-up angle is expanding reporting module adoption back to \u2014 and beyond \u2014 peak usage levels, potentially positioning advanced analytics or additional seats for the two affected departments.",
+    "questions_to_ask_customer": [
+      "When your team looks at the usage dashboard today, what specifically makes them question whether the export data can be relied on for internal reporting?",
+      "Which teams or workflows have been most disrupted by the reporting drop, and has that caused them to revert to any manual or off-platform processes?",
+      "From your perspective, what would 'resolved' look like \u2014 what needs to be true for your power users to feel confident using the reporting module again?",
+      "As you're heading toward the July renewal, how are stakeholders internally describing the value they're getting from the platform right now?"
+    ],
+    "preparation_time_estimate_minutes": 25
+  },
+  {
+    "account_id": "A017",
+    "checkin_id": "C007",
+    "headline": "Quartz Media is in critical decline\u2014active users have dropped 24% in three weeks, NPS is 2, the team has self-reported stopping platform use, and there is no identified champion ahead of a July renewal.",
+    "objectives": [
+      "Identify and confirm a named internal sponsor or champion who will own the platform relationship going forward",
+      "Agree on a concrete reactivation plan with defined milestones and a first action before end of May",
+      "Establish whether there is a viable path to renewal or if escalation/save protocol is needed"
+    ],
+    "topics_to_cover": [
+      "Acknowledge the platform stoppage directly and validate their frustration without being defensive",
+      "Champion gap: who is currently accountable for tooling decisions since previous champion departed/disengaged",
+      "Root cause of disengagement: workflow mismatch, onboarding gaps, product issues, or internal org changes",
+      "Review of open high-severity ticket T006 and what 'reset' means to them concretely",
+      "Platform value re-articulation: map remaining use cases to their current team structure and goals",
+      "Reactivation plan proposal: phased re-onboarding, success metrics, and owner accountability",
+      "Renewal timeline acknowledgment (July 22) and what conditions would make renewal a clear yes"
+    ],
+    "open_followups_from_last_call": [
+      "Identify a new internal sponsor to replace the missing champion (raised 2026-04-09, still unresolved per T006)",
+      "Propose and agree on a formal platform reset plan (committed on 2026-04-09 call, not yet completed)"
+    ],
+    "risks_to_flag": [
+      "No champion identified after 28 days \u2014 decision-making authority is unclear, making any commitments made on this call potentially unenforceable",
+      "Active user count has fallen from 21 to 16 in three weeks with power users dropping from 7 to 3 \u2014 churn signal is accelerating, not stabilizing",
+      "NPS of 2 indicates active detractor sentiment; customer may escalate or share negative feedback publicly",
+      "Renewal is 76 days out with health score at 46 and declining \u2014 standard renewal motion will not be sufficient",
+      "6 support tickets in 30 days alongside negative sentiment suggests unresolved product friction layered on top of engagement loss"
+    ],
+    "expansion_or_advocacy_angle": null,
+    "questions_to_ask_customer": [
+      "Since the team stepped back from the platform, who has been making decisions about which tools your team uses day-to-day \u2014 is there someone new we should be including in this conversation?",
+      "When you think about what 'a reset' would need to look like for your team to genuinely re-engage, what would have to be different compared to how you were using the platform before?",
+      "What were the specific moments or frustrations that led the team to stop using the platform \u2014 was it a single breaking point or a gradual drift?",
+      "If we could solve two or three things in the next 30 days, what would make it realistic for you to recommend renewing to your leadership in July?"
+    ],
+    "preparation_time_estimate_minutes": 35
+  },
+  {
+    "account_id": "A015",
+    "checkin_id": "C008",
+    "headline": "Orchid Telecom enters integration roadmap review with an unresolved product escalation from two weeks ago, a flat health trend, and a detractor-range NPS despite high expansion signal.",
+    "objectives": [
+      "Deliver a concrete update on the integration roadmap timeline from the product escalation initiated on 2026-04-25",
+      "Understand Orchid Telecom's next rollout dependencies and document any blockers that put the 2026-11-01 renewal or expansion at risk",
+      "Surface and progress the expansion opportunity given the high expansion signal"
+    ],
+    "topics_to_cover": [
+      "Status update on integration roadmap escalation to product (T009 / follow-up from 2026-04-25 call)",
+      "Orchid Telecom's internal rollout timeline and how it maps to our roadmap milestones",
+      "Impact of any roadmap delay on their platform team and broader deployment plans",
+      "Usage trends: active users are growing slightly but power-user count is flat \u2014 discuss adoption depth",
+      "NPS of 6: understand underlying drivers and what would move it meaningfully",
+      "Expansion potential: identify which teams or use cases are candidates for growth",
+      "Strategic relationship health and executive alignment ahead of renewal"
+    ],
+    "open_followups_from_last_call": [
+      "Escalate integration roadmap question to product team (initiated 2026-04-25 \u2014 confirm outcome and share response with customer today)"
+    ],
+    "risks_to_flag": [
+      "Roadmap dependency: if integration timeline slips, Orchid Telecom's next rollout may be blocked, directly threatening the 2026-11-01 renewal",
+      "NPS of 6 places a key contact in detractor range \u2014 unresolved roadmap frustration is a likely contributor and could spread to other stakeholders",
+      "Flat health score (79) and flat power-user count despite slight active-user growth suggests shallow adoption that limits expansion justification",
+      "Open ticket T009 (medium severity, neutral sentiment) has been unresolved since 2026-04-25 \u2014 prolonged open time on a strategic account erodes trust"
+    ],
+    "expansion_or_advocacy_angle": "High expansion signal warrants a direct conversation about which additional teams or workflows at Orchid Telecom are candidates for onboarding. Resolving the roadmap dependency credibly positions us as a reliable strategic partner and creates the right conditions to propose expansion ahead of renewal. If roadmap clarity is delivered today and received well, consider planting the seed for an executive business review before Q3.",
+    "questions_to_ask_customer": [
+      "Now that we have an update from our product team on the integration roadmap, how does the proposed timeline align with your platform team's rollout schedule \u2014 and where are the gaps, if any?",
+      "What would need to be true about the integration delivery for your team to feel confident enough to expand usage to additional business units?",
+      "When you gave us an NPS of 6, what one or two things were most driving that score, and what would a meaningful improvement look like from your side?",
+      "Outside of the integration dependency, are there other strategic initiatives at Orchid Telecom in the next 6 months that we should be planning around together?"
+    ],
+    "preparation_time_estimate_minutes": 25
+  },
+  {
+    "account_id": "A012",
+    "checkin_id": "C009",
+    "headline": "Lumen Energy enters the call with persistent permissions confusion driving high ticket volume and a suppressed NPS of 4, despite stable active usage, with renewal approaching in ~3 months.",
+    "objectives": [
+      "Complete admin training on the permissions model to reduce self-service confusion and ticket volume",
+      "Confirm delivery and utility of the permissions guide committed on 2026-04-23",
+      "Surface and address any underlying frustrations contributing to the NPS of 4 before the 2026-08-05 renewal"
+    ],
+    "topics_to_cover": [
+      "Admin training walkthrough on permissions model (primary call purpose)",
+      "Review and close out T005: advanced permissions how-to questions",
+      "Confirm receipt and usefulness of the permissions guide (follow-up from 2026-04-23)",
+      "8 support tickets in last 30 days \u2014 validate if permissions is the root cause of most volume",
+      "Health score context and NPS of 4 \u2014 check in on overall sentiment",
+      "Renewal awareness: contract ends 2026-08-05, ~3 months out"
+    ],
+    "open_followups_from_last_call": [
+      "Provide permissions guide (committed 2026-04-23) \u2014 confirm it was sent and whether it resolved the documented confusion"
+    ],
+    "risks_to_flag": [
+      "NPS of 4 is critically low and, combined with 8 tickets in 30 days, signals user frustration that could threaten the 2026-08-05 renewal if not addressed now",
+      "Health score is flat at 63 despite usage stability \u2014 permissions confusion may be creating a ceiling on deeper adoption and power-user growth",
+      "Renewal is ~3 months away with no expansion motion yet initiated; low NPS could block renewal conversation if sentiment doesn't improve post-training"
+    ],
+    "expansion_or_advocacy_angle": "Usage is holding steady with ~118 power users \u2014 if admin training resolves permissions friction, there is an opportunity to grow that power-user base and introduce expanded role-based workflows, which could support an expansion conversation ahead of the August renewal.",
+    "questions_to_ask_customer": [
+      "Since we last spoke, did the permissions guide we sent land with your admins, and did it clarify the areas that were causing the most confusion?",
+      "When your team runs into a permissions issue today, what does that workflow look like \u2014 are admins able to resolve it themselves, or is it consistently escalating to tickets?",
+      "Outside of the permissions challenges, what's been the biggest source of friction for your team over the last few weeks?",
+      "As you think about your renewal in August, what would need to be true for your admins and power users to feel confident in the platform going into next year?"
+    ],
+    "preparation_time_estimate_minutes": 20
+  },
+  {
+    "account_id": "A018",
+    "checkin_id": "C010",
+    "headline": "Redwood Cloud is entering a high-momentum expansion phase with rapidly growing active and power-user counts, and today's call focuses on finalizing a governance plan and multi-team adoption design to support a structured rollout.",
+    "objectives": [
+      "Align on a governance framework (ownership, permissions, policies) that can scale across multiple teams",
+      "Review and validate the phased rollout approach drafted since the April 26 call",
+      "Identify the next 2-3 teams in scope for expansion and confirm internal champions for each"
+    ],
+    "topics_to_cover": [
+      "Governance plan: team ownership model, admin roles, access control policies",
+      "Phased rollout design: sequencing of teams, timelines, success criteria per phase",
+      "Multi-team adoption: onboarding strategy, training needs, change management approach",
+      "Usage growth recap: active users up from 244 to 290 in two weeks \u2014 validate this aligns with expectations",
+      "Metrics and reporting: how Redwood Cloud will track adoption health across teams",
+      "Escalation and support model as user base scales"
+    ],
+    "open_followups_from_last_call": [
+      "Draft phased rollout approach (assigned from 2026-04-26 call \u2014 confirm if CSM has shared this and get customer feedback)"
+    ],
+    "risks_to_flag": [
+      "Governance gaps: expanding to multiple teams without a clear ownership and policy structure could lead to inconsistent usage, shadow admins, or security concerns",
+      "Rapid user growth (19% increase in active users over two weeks) may outpace formal onboarding processes if rollout design isn't locked soon",
+      "Renewal is in ~5.5 months \u2014 expansion commitments should be scoped in time to demonstrate ROI before the October 30 renewal conversation"
+    ],
+    "expansion_or_advocacy_angle": "With an NPS of 9, a health score trending up to 86, and strong platform-team sponsorship, Redwood Cloud is a strong candidate for a case study or reference story tied to their multi-team rollout. Consider planting the seed for a co-authored expansion success story once Phase 1 is complete.",
+    "questions_to_ask_customer": [
+      "Which teams are highest priority for the next rollout phase, and who will serve as the internal champion or admin for each?",
+      "What does your ideal governance model look like \u2014 are you thinking centralized admin control, federated team ownership, or a hybrid?",
+      "What does a successful 90-day expansion look like from your perspective \u2014 how will you measure it internally?",
+      "Are there any organizational or political dynamics across teams we should factor into the rollout sequencing?"
+    ],
+    "preparation_time_estimate_minutes": 25
+  },
+  {
+    "account_id": "A001",
+    "checkin_id": "C011",
+    "headline": "Acme Retail is entering a recovery call with a declining health score (72, down from 81), a 23% drop in active users over three weeks, and an unresolved dashboard export data issue that is fueling reporting adoption loss ahead of a July renewal.",
+    "objectives": [
+      "Confirm status and resolution path for T010 dashboard export data gap to restore customer confidence",
+      "Understand root causes of the adoption decline in the reporting module and agree on a concrete recovery plan",
+      "Stabilize the relationship and surface any additional dissatisfaction risks ahead of the 2026-07-15 renewal"
+    ],
+    "topics_to_cover": [
+      "Status update on T010: dashboard exports missing recent data \u2014 share current findings and ETA for fix",
+      "Reporting module adoption decline: review the 3-week active user drop (106 \u2192 82) and power-user erosion (40 \u2192 25)",
+      "Identify which teams or workflows have stopped using reporting and why",
+      "Agree on a short-term recovery plan with milestones (e.g., re-engagement sessions, feature walkthroughs)",
+      "Address customer frustration sentiment logged in T010 and acknowledge the impact directly",
+      "Preview upcoming product improvements relevant to reporting if available",
+      "Renewal timeline awareness: set expectations for a future business review before July 15"
+    ],
+    "open_followups_from_last_call": [
+      "Investigate and resolve the reporting data issue causing missing dashboard exports (raised 2026-04-21, still open as T010 as of 2026-04-24)"
+    ],
+    "risks_to_flag": [
+      "Health score declined 9 points in under 30 days \u2014 trajectory points toward at-risk renewal if not reversed soon",
+      "Active users dropped 23% (106 \u2192 82) and power users dropped 38% (40 \u2192 25) in three weeks, indicating systemic disengagement not just a single-user issue",
+      "T010 remains open and unresolved; customer sentiment is frustrated \u2014 entering this call without a fix or a clear ETA will likely deepen distrust",
+      "NPS of 6 and low expansion signal suggest limited goodwill buffer; a poor recovery call could accelerate churn risk",
+      "Renewal is only 65 days away \u2014 time to demonstrate value recovery is short"
+    ],
+    "expansion_or_advocacy_angle": null,
+    "questions_to_ask_customer": [
+      "Since the dashboard export issue started, which specific reporting workflows have your team had to work around or stop using entirely?",
+      "When you look at the teams that have pulled back from the reporting module, what's the primary reason they've given you for stepping away?",
+      "What would a fully functioning reporting experience need to look like for your team to feel confident in it again before your contract renews in July?",
+      "Is there anything else beyond the export issue that's been affecting your team's experience with the platform that we haven't addressed yet?"
+    ],
+    "preparation_time_estimate_minutes": 25
+  },
+  {
+    "account_id": "A002",
+    "checkin_id": "C012",
+    "headline": "BrightPath Logistics enters the call with an unresolved high-severity sync failure (3x this week), a declining health score of 61, NPS of 4, and a renewal in 7 weeks \u2014 stabilization and trust recovery are critical.",
+    "objectives": [
+      "Deliver a clear root cause or credible interim explanation for the recurring sync failures and confirm a remediation timeline",
+      "Rebuild customer confidence by demonstrating ownership and structured follow-through ahead of the June 30 renewal",
+      "Agree on a short-term monitoring cadence and explicit escalation path if failures recur before next check-in"
+    ],
+    "topics_to_cover": [
+      "Status update on T002: current findings from integration logs and root cause investigation",
+      "Timeline and owners for full sync failure resolution",
+      "Pattern analysis: whether the 3 failures this week are related or distinct incidents",
+      "Impact assessment: how sync failures have affected BrightPath's operations and team",
+      "Escalation path: introduction of engineering or technical lead if root cause remains unclear",
+      "Monitoring plan: what will be tracked and how BrightPath will be kept informed going forward",
+      "Renewal context: acknowledge the timing and reinforce commitment to resolution before June 30"
+    ],
+    "open_followups_from_last_call": [
+      "Escalate integration logs to engineering for root cause analysis (committed on 2026-04-18 \u2014 status must be reported; T002 note indicates logs exist but no root cause has been identified yet)"
+    ],
+    "risks_to_flag": [
+      "Renewal is 49 days out (2026-06-30) with health score at 61 and NPS at 4 \u2014 unresolved technical issues materially increase churn risk",
+      "T002 remains open since 2026-04-29 with no root cause; frontline team has logs but investigation appears stalled \u2014 customer sentiment is marked 'concerned'",
+      "Health score has declined from 69 to 61 with a flat trend; if sync failures continue, further drop is likely before renewal",
+      "Last contact was 24 days ago (2026-04-18); the gap combined with ongoing failures may have eroded trust further",
+      "7 support tickets in 30 days signals systemic friction, not isolated incidents \u2014 integration stability may be a deeper platform or configuration issue"
+    ],
+    "expansion_or_advocacy_angle": "Expansion signal is rated medium, but it should not be pursued until sync failures are fully resolved and health score recovers. If stabilization is achieved before renewal, a brief acknowledgment of BrightPath's scale needs and any relevant roadmap features (e.g., enhanced sync monitoring, API reliability improvements) could be introduced as a confidence signal rather than a sales motion.",
+    "questions_to_ask_customer": [
+      "Since the sync failures started occurring, what has the operational impact been on your team \u2014 are there specific workflows or downstream systems that have been disrupted?",
+      "Beyond the three failures flagged this week, have you noticed any other reliability patterns or edge cases with the integration that you haven't yet opened a ticket for?",
+      "What would a successful resolution look like to your team over the next 30 days \u2014 is it zero failures, faster response times, more transparency into what's happening, or something else?",
+      "Given where things stand today, how are you feeling about the partnership heading into your renewal in June, and is there anything we should know about internal conversations around it?"
+    ],
+    "preparation_time_estimate_minutes": 35
+  }
+]

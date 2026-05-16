@@ -1,0 +1,285 @@
+[
+  {
+    "output_id": "O001",
+    "first_review": {
+      "output_id": "O001",
+      "scores": [
+        {
+          "standard_id": "QS001",
+          "score": 1,
+          "rationale": "The draft contains zero account-specific context. It does not mention Harbor Insurance, the executive sponsor, the recurring SSO admin-user failure, the stalled implementation rollout, the $240K contract, or the declining health score. It is a generic placeholder sentence that could apply to any customer with any issue."
+        },
+        {
+          "standard_id": "QS002",
+          "score": 1,
+          "rationale": "No concrete next steps, no named owner, and no timing commitment. 'Will update you soon' is the opposite of actionable. A recovery plan requires specific milestones (e.g., root-cause diagnosis by [date], fix deployed by [date]), assigned owners (engineering lead, CSM Morgan Lee), and a cadence for status updates."
+        },
+        {
+          "standard_id": "QS003",
+          "score": 1,
+          "rationale": "The draft entirely fails to acknowledge material risk. This account has a health score of 48 (down from 66), NPS of 2, 9 support tickets in 30 days, a frustrated executive sponsor, and a high-severity implementation blocker. The churn and sentiment risk here is acute and needs to be named and addressed in the executive update, not ignored."
+        },
+        {
+          "standard_id": "QS005",
+          "score": 2,
+          "rationale": "The April 17 call note explicitly flagged a technical escalation as a follow-up action, and T001 is a high-severity open ticket with a frustrated executive sponsor. The draft makes no reference to escalation status or whether engineering/implementation specialists have been engaged. This is a high-urgency situation requiring confirmed escalation, which is absent."
+        }
+      ],
+      "overall_quality": "reject",
+      "primary_issue": "The draft is a generic, context-free placeholder that fails to address the account's critical situation, provides no recovery plan or action items, and omits all material churn and escalation risks for a $240K enterprise account in active distress.",
+      "suggested_revision": "Subject: Harbor Insurance \u2013 SSO Resolution Plan & Implementation Recovery Update\n\nDear [Executive Sponsor Name],\n\nThank you for your continued partnership and for flagging the severity of the SSO issue directly. I want to be transparent with you: we understand this blocker is unacceptable given where you are in your rollout, and we are treating it as our highest priority.\n\nHere is where we stand and what we are doing:\n\n**Current situation:** Our support team has confirmed a recurring SSO authentication error affecting admin users (Ticket T001, opened 2026-04-30). This has directly stalled your implementation launch.\n\n**Immediate actions and owners:**\n1. **Technical escalation confirmed** \u2013 Morgan Lee has escalated this to our senior engineering team as of [today's date]. A dedicated engineer is assigned to root-cause diagnosis.\n2. **Root-cause diagnosis target** \u2013 We are committed to providing a full technical root-cause summary by [specific date, e.g., 2026-05-02].\n3. **Resolution target** \u2013 We are targeting a tested fix deployed to your environment by [specific date, e.g., 2026-05-05], with rollout resumption planning to follow immediately.\n4. **Executive check-in** \u2013 Morgan Lee will schedule a 30-minute call with you by [specific date] to walk through the resolution and revised implementation timeline.\n\n**Going forward:** We will send daily written status updates until SSO is fully resolved and your launch is back on track.\n\nWe recognize the disruption this has caused and take full accountability. Our goal is to get Harbor Insurance live and realizing value as quickly as possible.\n\nMorgan Lee | CSM, [Company Name] | [contact info]",
+      "escalate_to_human": true
+    },
+    "judge": {
+      "output_id": "O001",
+      "judge_verdict": "agree",
+      "your_independent_overall_quality": "reject",
+      "disagreement_reasoning": null,
+      "confidence_in_first_review": "high",
+      "final_action": "reject"
+    },
+    "consensus": "escalate"
+  },
+  {
+    "output_id": "O002",
+    "first_review": {
+      "output_id": "O002",
+      "scores": [
+        {
+          "standard_id": "QS001",
+          "score": 1,
+          "rationale": "The draft contains zero account-specific details. It does not reference Evergreen Finance by name, the $175,000 contract, the declining health score (67, down from 76), the NPS of 5, the executive sponsor's explicit request for a usage review, the upcoming May 28 renewal deadline, or any measurable usage data. 'Your team has used the product a lot' is a vague placeholder with no grounding in the account context."
+        },
+        {
+          "standard_id": "QS002",
+          "score": 1,
+          "rationale": "There are no concrete next steps, no owner assigned, and no timing. The open ticket T007 explicitly flags a Friday deadline for the executive sponsor's usage summary, and the renewal is under 45 days away. None of this urgency or actionable direction appears in the draft. 'Renewal makes sense' is a conclusion, not a next step."
+        },
+        {
+          "standard_id": "QS004",
+          "score": 2,
+          "rationale": "The tone is casual ('a lot', 'we think') and not suitable for an enterprise customer-facing renewal summary involving a $175,000 contract and an executive sponsor. It is brief, but brevity without substance does not meet the clarity standard. A renewal summary for an enterprise account requires professional framing and structured clarity."
+        }
+      ],
+      "overall_quality": "reject",
+      "primary_issue": "The draft contains no account-specific data, no actionable next steps, and is too casual for an enterprise renewal conversation with an executive sponsor facing a hard Friday deadline.",
+      "suggested_revision": "INTERNAL CSM RENEWAL SUMMARY \u2014 Evergreen Finance (A005)\nOwner: Morgan Lee | Renewal Date: 2026-05-28 (< 45 days) | Contract: $175,000\n\nSituation:\nThe executive sponsor at Evergreen Finance has requested a usage review and concise ROI summary ahead of renewal. Health score has declined to 67 (from 76), NPS sits at 5, and a high-severity ticket (T007) was opened 2026-04-26 flagging that this summary is needed by Friday.\n\nNext Steps:\n1. Morgan Lee to prepare and deliver the renewal value snapshot (usage metrics, key outcomes, ROI highlights) to the executive sponsor by [this Friday's date] \u2014 directly addressing T007.\n2. Schedule a 30-minute exec sponsor call prior to 2026-05-14 to walk through the summary and surface any renewal objections early.\n3. Address the health score decline in the summary: acknowledge the 3 recent support tickets and demonstrate resolution progress to rebuild confidence.\n4. Flag expansion signal (medium) as a potential upsell conversation point, but prioritize retention given the NPS of 5.\n\nRisk: If the Friday deadline for the usage summary is missed, renewal confidence will likely erode further given the declining health trend and low NPS.",
+      "escalate_to_human": false
+    },
+    "judge": {
+      "output_id": "O002",
+      "judge_verdict": "agree",
+      "your_independent_overall_quality": "reject",
+      "disagreement_reasoning": null,
+      "confidence_in_first_review": "high",
+      "final_action": "reject"
+    },
+    "consensus": "reject"
+  },
+  {
+    "output_id": "O003",
+    "first_review": {
+      "output_id": "O003",
+      "scores": [
+        {
+          "standard_id": "QS001",
+          "score": 1,
+          "rationale": "The draft makes no reference to Northstar Travel, the declining health score (52, down from 71), the imminent May 2026 renewal, the open T003 ticket, the April 16 call commitment to send a mobile onboarding plan, or the field-team onboarding goal discussed with the customer. It is entirely generic."
+        },
+        {
+          "standard_id": "QS002",
+          "score": 1,
+          "rationale": "The only action offered \u2014 'ask users to try logging in again' \u2014 has no owner, no timeline, no path to resolution, and does not address the confirmed bug preventing onboarding step completion. It does not fulfill the committed deliverable (mobile onboarding plan) from the April 16 call."
+        },
+        {
+          "standard_id": "QS003",
+          "score": 2,
+          "rationale": "The draft implicitly acknowledges there is an issue but fails to surface the material churn and renewal risk: health score is declining (52), NPS is 3, renewal is in ~3 weeks (May 20), and a confirmed bug is blocking the primary adoption goal. These risks are not identified or treated with appropriate urgency."
+        }
+      ],
+      "overall_quality": "reject",
+      "primary_issue": "The draft is a generic login-retry prompt that ignores Northstar Travel's account context, the confirmed mobile onboarding bug, an imminent $83K renewal at risk, and the CSM's outstanding commitment to deliver a mobile onboarding plan.",
+      "suggested_revision": "Hi [Admin name],\n\nThank you for flagging the mobile onboarding issue (ticket T003). I want to address this with urgency given that your renewal is coming up on May 20 and we committed on our April 16 call to deliver a mobile onboarding plan for your field team.\n\nHere is what we are doing and what we need from you:\n\n**Immediate actions (this week):**\n- **Engineering (CSM to confirm by 2026-04-30):** I am escalating T003 to our engineering team today to confirm the root cause of the onboarding-step completion failure and get an estimated fix date. I will share that date with you by EOD Friday, April 30.\n- **Workaround (CSM to send by 2026-04-29):** While the fix is in progress, I will send you a step-by-step workaround guide by tomorrow so field-team members are not blocked from onboarding.\n- **Your action:** Please confirm with your admin how many users are currently affected so we can prioritize scope and assess whether a manual assisted-onboarding session would help bridge the gap before the fix is deployed.\n\n**Mobile onboarding plan (by 2026-05-05):**\nAs discussed on April 16, I will deliver the full mobile onboarding plan for your field team by May 5. This will include recommended onboarding sequences, admin setup steps, and adoption milestones.\n\n**Renewal context:**\nI recognize this issue has created friction at a critical time. My goal is to have the bug resolved or fully mitigated well before May 20 so your team enters the renewal period with confidence in the mobile experience.\n\nPlease let me know if you would like a call this week to walk through the plan together.\n\nBest,\nMorgan Lee",
+      "escalate_to_human": false
+    },
+    "judge": {
+      "output_id": "O003",
+      "judge_verdict": "agree",
+      "your_independent_overall_quality": "reject",
+      "disagreement_reasoning": null,
+      "confidence_in_first_review": "high",
+      "final_action": "reject"
+    },
+    "consensus": "reject"
+  },
+  {
+    "output_id": "O004",
+    "first_review": {
+      "output_id": "O004",
+      "scores": [
+        {
+          "standard_id": "QS001",
+          "score": 1,
+          "rationale": "The draft contains zero account-specific context. It does not reference Quartz Media by name, the declining health score, the 6 recent support tickets, the NPS of 2, the open high-severity ticket T006, or the team's stated reason for stopping platform use. 'We miss seeing your team' is a generic sentiment that could apply to any account."
+        },
+        {
+          "standard_id": "QS002",
+          "score": 1,
+          "rationale": "The only proposed action is 'Do you want to meet sometime?' \u2014 no specific meeting format, no proposed date/time, no owner assigned, no agenda tied to the reset discussion. The follow-up from the 2026-04-09 call (identify new sponsor, propose reset) is completely absent. This fails every dimension of actionability."
+        },
+        {
+          "standard_id": "QS006",
+          "score": 1,
+          "rationale": "The April 9 reactivation call established two explicit follow-up commitments: identify a new sponsor and propose a platform reset. Neither is acknowledged or carried forward. Open ticket T006 (high severity, team has stopped using platform) is also entirely ignored. There is no continuity whatsoever with prior engagements."
+        }
+      ],
+      "overall_quality": "reject",
+      "primary_issue": "The draft fails all three standards completely \u2014 it contains no account-specific context, no actionable next steps, and ignores every open commitment and unresolved ticket from prior interactions.",
+      "suggested_revision": "Subject: Following up \u2014 Platform reset for Quartz Media\n\nHi [Stakeholder name / Team],\n\nI wanted to follow up on our conversation on April 9th, where we talked about rebuilding how your team uses the platform and finding the right internal owner to lead that effort.\n\nI know the team has stepped back from the platform recently, and I want to make sure we address that directly. Based on what we discussed, I'd like to propose a focused 30-minute reset session where we can:\n\n1. Revisit your original use case and identify what's blocking adoption\n2. Walk through a simplified onboarding path for your current team\n3. Agree on a single internal point of contact to coordinate going forward\n\nCould you connect me with the right person at Quartz Media to set this up? I have availability this week on [specific dates/times] and can work around your schedule.\n\nGiven the open support ticket your team raised, I'd also like to address that directly in the same session so we're not leaving anything unresolved.\n\nLooking forward to reconnecting \u2014 Morgan Lee, [contact info]",
+      "escalate_to_human": false
+    },
+    "judge": {
+      "output_id": "O004",
+      "judge_verdict": "agree",
+      "your_independent_overall_quality": "reject",
+      "disagreement_reasoning": null,
+      "confidence_in_first_review": "high",
+      "final_action": "reject"
+    },
+    "consensus": "reject"
+  },
+  {
+    "output_id": "O005",
+    "first_review": {
+      "output_id": "O005",
+      "scores": [
+        {
+          "standard_id": "QS002",
+          "score": 2,
+          "rationale": "The draft mentions three phases (training, admin setup, success metrics) but provides no concrete next steps, no owners (e.g., CSM Morgan Lee vs. customer-side analytics lead), no timing or dates, and no sequencing. The account context gives clear signals \u2014 a follow-up was already promised on 2026-04-25 \u2014 yet none of that is reflected. The output reads as a placeholder outline, not an actionable plan."
+        },
+        {
+          "standard_id": "QS004",
+          "score": 3,
+          "rationale": "The single sentence is concise and professionally worded, but it is too sparse to be suitable as a customer-facing expansion plan or a useful internal CSM artifact. It lacks the structure and completeness expected for an enterprise account at $210K ACV. Clarity suffers because the reader cannot determine what actually happens next or what the phases entail."
+        }
+      ],
+      "overall_quality": "revise",
+      "primary_issue": "The draft lacks any concrete next steps, owners, or timing, making it unactionable as an expansion plan despite clear context available in the account notes and recent call.",
+      "suggested_revision": "**Cobalt Health \u2013 Analytics Team Expansion Rollout Plan**\n*Prepared by: Morgan Lee | Last updated: 2026-04-28*\n\n**Phase 1 \u2013 Admin Setup (Target: May 9, 2026)**\n- Owner (CSM): Morgan Lee shares best-practice configuration guide with analytics team lead (per T012 request).\n- Owner (Customer): Analytics team lead provisions user accounts and sets department-level permissions.\n- Milestone: Admin environment ready for pilot users.\n\n**Phase 2 \u2013 Training (Target: May 16\u201323, 2026)**\n- Owner (CSM): Schedule two live onboarding sessions (analytics workflows + reporting dashboards).\n- Owner (Customer): Identify 5\u201310 pilot users from analytics team to attend sessions.\n- Milestone: Pilot users complete onboarding; initial dashboards configured.\n\n**Phase 3 \u2013 Success Metrics Review (Target: June 6, 2026)**\n- Owner (CSM): Deliver a 30-day adoption summary (logins, feature usage, ticket volume).\n- Owner (Customer): Analytics lead confirms team readiness for full department rollout.\n- Milestone: Mutual sign-off on full expansion go-live date.\n\n**Immediate Next Step:** Morgan Lee to send rollout plan and best-practice setup guide to analytics team lead by 2026-04-30, fulfilling the 2026-04-25 call follow-up commitment.",
+      "escalate_to_human": false
+    },
+    "judge": {
+      "output_id": "O005",
+      "judge_verdict": "agree",
+      "your_independent_overall_quality": "revise",
+      "disagreement_reasoning": null,
+      "confidence_in_first_review": "high",
+      "final_action": "revise"
+    },
+    "consensus": "revise"
+  },
+  {
+    "output_id": "O006",
+    "first_review": {
+      "output_id": "O006",
+      "scores": [
+        {
+          "standard_id": "QS003",
+          "score": 2,
+          "rationale": "The draft conflates two distinct issues: 'report exports are broken' is not supported by the account context, which describes a trust/data freshness concern and a usage drop \u2014 not a broken export function. Overstating a reliability issue as a hard outage is inaccurate. The churn characterization ('probably going to churn unless fixed immediately') is also unsupported at this stage; health score is declining but renewal is 14+ months out and expansion signal is medium. Risk is real but overstated."
+        },
+        {
+          "standard_id": "QS004",
+          "score": 2,
+          "rationale": "The draft is a single informal sentence with no structure. An internal risk note for manager review requires: account identification, specific risk factors, supporting evidence, and recommended actions. 'Probably going to churn' is imprecise language unsuitable for internal documentation. No mention of contract value, renewal timeline, NPS, health score trend, or ticket volume \u2014 all of which are relevant for a manager reviewing risk."
+        },
+        {
+          "standard_id": "QS005",
+          "score": 3,
+          "rationale": "Implicit escalation urgency is conveyed via 'unless fixed immediately,' but no explicit escalation action or owner is identified. The account does warrant attention (health score 58 and declining, NPS 5, 6 tickets in 30 days), but the draft fails to specify what should be escalated, to whom, or by when. Not a critical failure, but escalation guidance is absent."
+        }
+      ],
+      "overall_quality": "revise",
+      "primary_issue": "The draft mischaracterizes the risk (broken exports vs. trust/data freshness concern) and lacks the structure, evidence, and specificity required for a credible internal risk note.",
+      "suggested_revision": "INTERNAL RISK NOTE \u2014 Juniper Manufacturing (A010)\nCSM: Taylor Chen | Segment: Mid-Market | ACV: $74,000 | Renewal: 2026-07-02\nHealth Score: 58 (\u2193 from 63, declining trend) | NPS: 5 | Tickets (30d): 6\n\nRisk Summary:\nJuniper is showing early-to-moderate churn signals. Health score has declined 5 points and usage has dropped in two departments. A power user has flagged distrust in report export data, linked to a suspected data freshness issue (T004, Sev Medium, open). Usage dashboard review on 2026-04-24 confirmed the reporting module drop; root cause (data freshness) is still under investigation.\n\nKey Risk Factors:\n- Declining usage in two departments with no recovery trend\n- Low NPS (5) indicating dissatisfied primary contact\n- Report data trust issue unresolved; no confirmed fix timeline\n- Ticket volume increasing (6 in 30 days)\n\nRecommended Actions:\n1. Prioritize resolution of T004 data freshness investigation \u2014 assign engineering or analytics SME if needed.\n2. Taylor Chen to schedule follow-up call with power user before 2026-05-09 to restore confidence in reporting module.\n3. Flag for manager review given health score trajectory; consider executive outreach if issue remains unresolved by 2026-05-16.\n\nRenewal is 14 months out; churn risk is elevated but not immediate. Early intervention is recommended to prevent further disengagement.",
+      "escalate_to_human": true
+    },
+    "judge": {
+      "output_id": "O006",
+      "judge_verdict": "agree",
+      "your_independent_overall_quality": "revise",
+      "disagreement_reasoning": null,
+      "confidence_in_first_review": "high",
+      "final_action": "revise"
+    },
+    "consensus": "escalate"
+  },
+  {
+    "output_id": "O007",
+    "first_review": {
+      "output_id": "O007",
+      "scores": [
+        {
+          "standard_id": "QS001",
+          "score": 1,
+          "rationale": "The draft contains zero account-specific context. It does not reference Lumen Energy by name, does not acknowledge the ongoing ticket T005, does not connect to the April 23 call goal of reducing admin confusion, and ignores the pattern of 8 support tickets in 30 days that signals a systemic enablement gap rather than a one-off question."
+        },
+        {
+          "standard_id": "QS002",
+          "score": 1,
+          "rationale": "The draft provides no concrete next steps whatsoever. It does not specify which permissions topics to cover (advanced permissions, as noted in T005), does not assign an owner (Riley Patel), includes no timing, and the only call-to-action is a vague 'let us know if you have questions' \u2014 the opposite of actionability."
+        }
+      ],
+      "overall_quality": "reject",
+      "primary_issue": "The draft is a generic, one-sentence placeholder that ignores all available account context and provides no actionable guidance, failing both applicable standards at the minimum score.",
+      "suggested_revision": "Hi [Lumen Energy admin contact],\n\nFollowing up on our April 23 call with your team \u2014 as promised, here is the permissions guide focused on the advanced permissions scenarios your admins have been running into.\n\n**Attached/linked: [Advanced Permissions Guide v2.x]**\n\nBased on the questions in ticket T005 and our recent conversation, I want to make sure this directly addresses your team's confusion around the permission model. Here are three specific areas the guide covers that are most relevant to your situation:\n\n1. **Role hierarchy and inheritance** \u2013 How parent/child role permissions cascade, and where overrides apply.\n2. **Admin vs. user-level permission scopes** \u2013 Common misconfiguration patterns and how to audit current settings.\n3. **Bulk permission updates** \u2013 Step-by-step process to apply changes across multiple users without manual re-entry.\n\n**Suggested next steps:**\n- **This week:** Your admin team reviews sections 1\u20133 of the guide.\n- **By May 7:** Riley Patel (cc'd) will schedule a 30-minute working session to walk through any remaining questions live and confirm the model is clear.\n- **Ongoing:** Riley will monitor open tickets to confirm volume decreases after the session.\n\nPlease reply here or directly to Riley if any questions come up before then. We want to get your team fully confident on this so it stops generating repeated support requests.\n\nBest,\nRiley Patel | CSM, [Company]",
+      "escalate_to_human": false
+    },
+    "judge": {
+      "output_id": "O007",
+      "judge_verdict": "agree",
+      "your_independent_overall_quality": "reject",
+      "disagreement_reasoning": null,
+      "confidence_in_first_review": "high",
+      "final_action": "reject"
+    },
+    "consensus": "reject"
+  },
+  {
+    "output_id": "O008",
+    "first_review": {
+      "output_id": "O008",
+      "scores": [
+        {
+          "standard_id": "QS002",
+          "score": 1,
+          "rationale": "The draft provides no concrete next steps, no owner, and no timing. 'Collect requirements and escalate to product' is vague \u2014 it does not specify who collects requirements, what format, by when, or who the product contact is. For a $300K enterprise account with a stated roadmap dependency blocking a rollout, this is critically insufficient."
+        },
+        {
+          "standard_id": "QS004",
+          "score": 2,
+          "rationale": "The sentence is technically concise but reads as an internal placeholder rather than a customer-facing or even internally polished CSM communication. It lacks professionalism appropriate for a strategic enterprise account (Orchid Telecom, NPS 6, flat health trend). The passive construction and lack of structure make it unsuitable for direct customer use."
+        },
+        {
+          "standard_id": "QS005",
+          "score": 3,
+          "rationale": "Escalation to product is directionally correct given the roadmap dependency and rollout risk, and the call notes already flagged this as a follow-up action. However, the draft does not specify urgency, channel, or what information to bring to product. Given the NPS of 6, flat health trend, and a $300K renewal in November 2026 with expansion signal, the escalation framing is under-calibrated \u2014 it should treat this as time-sensitive rather than routine."
+        }
+      ],
+      "overall_quality": "reject",
+      "primary_issue": "The draft fails to provide any actionable, owned, or time-bound next steps for a strategic enterprise account with a live rollout dependency and deteriorating sentiment indicators.",
+      "suggested_revision": "Hi [Orchid Telecom Platform Team],\n\nThank you for raising the integration roadmap question \u2014 we understand this is a dependency for your next rollout and want to make sure we give you a clear path forward.\n\nHere is what we are doing immediately:\n\n1. **Requirements capture (Owner: Riley Patel | By: 2026-04-30)** \u2014 Riley will send a structured requirements brief by EOD April 30 to document your integration priorities and rollout timeline. Please review and return with any additions by May 2.\n\n2. **Product escalation (Owner: Riley Patel \u2192 Product PM | By: 2026-05-05)** \u2014 Riley will formally escalate to the integrations product team with your requirements attached, flagging this as a strategic dependency. You will receive a written summary of the product team's current roadmap status and any anticipated timelines by May 5.\n\n3. **Follow-up sync (Owner: Riley Patel | Target: week of 2026-05-06)** \u2014 Riley will schedule a 30-minute alignment call to walk through the product team's response and confirm whether it meets your rollout needs.\n\nWe recognize this roadmap dependency is business-critical and will treat it accordingly. Riley remains your single point of contact and will proactively update you if anything changes before May 5.\n\nPlease let us know if there are additional stakeholders on your side who should be looped in.\n\nBest,\nRiley Patel | Customer Success Manager",
+      "escalate_to_human": false
+    },
+    "judge": {
+      "output_id": "O008",
+      "judge_verdict": "agree",
+      "your_independent_overall_quality": "reject",
+      "disagreement_reasoning": null,
+      "confidence_in_first_review": "high",
+      "final_action": "reject"
+    },
+    "consensus": "reject"
+  }
+]

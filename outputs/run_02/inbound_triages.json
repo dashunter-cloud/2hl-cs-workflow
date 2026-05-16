@@ -1,0 +1,122 @@
+[
+  {
+    "ticket_id": "T001",
+    "account_id": "A008",
+    "route": "escalation",
+    "urgency_score": 9,
+    "reason": "High-severity SSO blocker blocking enterprise customer implementation with renewal in 43 days, declining health (48/100), and executive involvement; unresolved technical issue requires immediate executive coordination.",
+    "suggested_owner": "Exec",
+    "draft_response": null,
+    "follow_up_in_days": null
+  },
+  {
+    "ticket_id": "T002",
+    "account_id": "A002",
+    "route": "escalation",
+    "urgency_score": 9,
+    "reason": "High severity blocker with repeated failures, enterprise renewal in 62 days, declining health score, and unresolved integration pattern requiring root cause analysis and executive visibility.",
+    "suggested_owner": "Exec",
+    "draft_response": null,
+    "follow_up_in_days": null
+  },
+  {
+    "ticket_id": "T003",
+    "account_id": "A014",
+    "route": "escalation",
+    "urgency_score": 9,
+    "reason": "Mobile onboarding blocker directly threatens renewal in 22 days; declining health score (52) and usage trending downward indicate high churn risk.",
+    "suggested_owner": "Exec",
+    "draft_response": null,
+    "follow_up_in_days": null
+  },
+  {
+    "ticket_id": "T004",
+    "account_id": "A010",
+    "route": "escalation",
+    "urgency_score": 8,
+    "reason": "Declining usage trend (17% drop in 2 weeks), deteriorating health score, renewal in 65 days, and unresolved data trust issue from prior call indicate churn risk requiring immediate executive intervention.",
+    "suggested_owner": "Exec",
+    "draft_response": null,
+    "follow_up_in_days": null
+  },
+  {
+    "ticket_id": "T005",
+    "account_id": "A012",
+    "route": "scheduled",
+    "urgency_score": 4,
+    "reason": "Low-severity enablement gap with clear resolution path; schedule alongside Riley's existing follow-up on permissions guide to maximize impact.",
+    "suggested_owner": "CSM",
+    "draft_response": "Thanks for reaching out on advanced permissions\u2014we can definitely help clarify the permission model. Riley Patel, your CSM, is already preparing a detailed permissions guide based on your recent call and will send that over by end of week. In the meantime, feel free to reply with specific use cases and we'll point you to the right docs.",
+    "follow_up_in_days": 3
+  },
+  {
+    "ticket_id": "T006",
+    "account_id": "A017",
+    "route": "escalation",
+    "urgency_score": 9,
+    "reason": "High severity with steep usage decline, missing champion, renewal in 87 days, and unresolved blocker from failed reactivation attempt.",
+    "suggested_owner": "TAM",
+    "draft_response": null,
+    "follow_up_in_days": null
+  },
+  {
+    "ticket_id": "T007",
+    "account_id": "A005",
+    "route": "escalation",
+    "urgency_score": 9,
+    "reason": "High-severity renewal blocker within 45 days with declining usage trend and executive sponsor requiring immediate deliverable by Friday; health score decline signals churn risk.",
+    "suggested_owner": "Exec",
+    "draft_response": null,
+    "follow_up_in_days": null
+  },
+  {
+    "ticket_id": "T008",
+    "account_id": "A004",
+    "route": "escalation",
+    "urgency_score": 8,
+    "reason": "Ownership transition with declining health (73\u219254), usage collapse (25\u219215 active users), and renewal within 117 days creates churn risk requiring immediate CSM + exec intervention.",
+    "suggested_owner": "CSM",
+    "draft_response": null,
+    "follow_up_in_days": null
+  },
+  {
+    "ticket_id": "T009",
+    "account_id": "A015",
+    "route": "escalation",
+    "urgency_score": 8,
+    "reason": "Strategic enterprise account ($300K) with renewal in 6 months has roadmap dependency blocking their rollout; product escalation required to unblock.",
+    "suggested_owner": "TAM",
+    "draft_response": null,
+    "follow_up_in_days": null
+  },
+  {
+    "ticket_id": "T010",
+    "account_id": "A001",
+    "route": "escalation",
+    "urgency_score": 8,
+    "reason": "At-risk renewal within 83 days, critical reporting feature blocker driving adoption collapse, and executive alignment needed to prevent churn.",
+    "suggested_owner": "Exec",
+    "draft_response": null,
+    "follow_up_in_days": null
+  },
+  {
+    "ticket_id": "T011",
+    "account_id": "A006",
+    "route": "scheduled",
+    "urgency_score": 3,
+    "reason": "Low-severity expansion inquiry from a high-health, growing account with a scheduled automation review follow-up already in motion.",
+    "suggested_owner": "CSM",
+    "draft_response": "Thanks for your interest in our premium automation features! Based on your strong adoption trend and your recent automation review call, Riley will follow up within 2 business days with tailored premium feature options and pricing to help you evaluate what works best for your workflow and budget.",
+    "follow_up_in_days": 2
+  },
+  {
+    "ticket_id": "T012",
+    "account_id": "A003",
+    "route": "scheduled",
+    "urgency_score": 6,
+    "reason": "Low-severity expansion opportunity with high-value account; needs coordination with existing CSM relationship and rollout planning already in motion.",
+    "suggested_owner": "CSM",
+    "draft_response": "Thanks for reaching out\u2014we're excited to support your analytics team's rollout! Morgan Lee (your CSM) is already coordinated on this expansion and will share our best-practice configuration guide and a phased rollout plan by end of week. We'll schedule a brief setup call with your analytics lead to ensure a smooth deployment.",
+    "follow_up_in_days": 3
+  }
+]
